@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css?family=Caveat|Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+.style {
+
+  padding: 0;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: rgba(99, 196, 252, 0.877) !important;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(209, 209, 209) !important;
+  margin-left: 1rem;
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+  color: rgba(6, 10, 240, 0.877) !important;
+}
+.navbar-light .navbar-brand {
+  color: rgb(240, 240, 240);
+}
+
+.navbar-light .navbar-toggler {
+  color: rgba(0, 4, 255, 0.808) !important;
+}
+
+#navbar {
+  transition: top 0.4s ease-in-out;
+}
+
+.top-bottom {
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+}
+
+.pad {
+  padding-left: 10px;
+}
+
+.title-nav {
+  font-family: "Audiowide", "Righteous", cursive;
+  font-weight: lighter;
+  margin-left: 0.7rem;
+}
+
+.title-nav:hover {
+  color: rgb(0, 3, 185) !important;
+}
+
+.navbar-light button.navbar-toggler.collapsed span.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(3, 150, 244,1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.bt {
+  margin-bottom: 0;
+}
+
+#basic-navbar-nav {
+  margin-left: 1.5rem;
+}
+
+.right-btn {
+  margin-right: 3rem !important;
+}
+
+@media (max-width: 1050px) {
+  .right-btn {
+    margin-left: 1rem !important;
+  }
+  .dropdown .dropdown-menu {
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    
+    max-height: 0;
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+  }
+}
+
+/* .dropdown .dropdown-menu {
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+
+  max-height: auto;
+  display: block;
+  overflow: hidden;
+  opacity: 0;
+} */
+
+.logoimg {
+  height: 50px;
+  margin-right: 5px;
+  margin-left: 25px;
+}
+
+.dropdown.show .dropdown-menu {
+  max-height: 500px;
+  opacity: 1;
+}
+
+@media (max-width: 992px) {
+  .bt {
+    padding-left: 3rem;
+  }
+  .title {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .logoimg {
+    height: 30px;
+    margin-right: 5px;
+    margin-left: 3px;
+  }
+}

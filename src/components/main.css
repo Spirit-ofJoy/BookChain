@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Caveat|Righteous&display=swap');
+
+.Typewriter{
+    font-family: Audiowide;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+}
+
+h2{
+    font-family: Righteous;
+    margin-bottom: 2rem;
+    color: rgb(248, 248, 248);
+    text-shadow: 3px 2px black;
+}
+
+h1{
+    font-family: Righteous;
+    margin-bottom: 2rem;
+    color: rgb(248, 248, 248);
+    text-shadow: 3px 2px black;
+}
+
+table{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+td:empty{
+    display: none;
+}
+th:empty{
+    display: none;
+}

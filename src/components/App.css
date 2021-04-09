@@ -1,0 +1,46 @@
+/* Styles go here */
+@import url('https://fonts.googleapis.com/css?family=Caveat|Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    
+    /* background: linear-gradient(
+      180deg,
+      rgb(22, 22, 22) 0%,
+      rgb(26, 26, 26) 100%
+    ); */
+  
+    /* background: url("../images/utils/shootingstar.jpg") center center no-repeat;
+    background-size: contain;
+    background-position:center center;  */
+    
+  }
+
+  body {
+      background: url("https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif") ;
+      background-size: cover;
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    
+  }
+
+.nopad{
+    padding: 0;
+}
+
+.jumbotron {
+    margin: auto;
+    padding: 2rem 3rem 3rem 3rem;
+    background-color: #e9ecef8c;
+}
+
+.container-fluid {
+    width: 100%;
+    padding: 0;
+}
