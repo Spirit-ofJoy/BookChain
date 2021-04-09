@@ -1,11 +1,15 @@
 <!-- Heading1(Title) -->
 <h1 align = center>BookChain :book:</font></h1>
 
-![Built with React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Built with React](https://img.shields.io/badge/React-000000?style=for-the-badge&logo=react&logoColor=61DAFB)
+&nbsp;
+![Built with Babel](https://img.shields.io/badge/Babel-F9DC3E?style=for-the-badge&logo=Babel&logoColor=white)
 &nbsp;
 ![Built with Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 &nbsp;
-![Built with BlockChain](https://img.shields.io/badge/Blockchain-000000?style=for-the-badge&logo=Blockchain.com&logoColor=white)
+![Built with BlockChain](https://img.shields.io/badge/Blockchain-121D33?style=for-the-badge&logo=Blockchain.com&logoColor=white)
+&nbsp;
+![Built with Ethereum](https://img.shields.io/badge/Ethereum-3B80AE?style=for-the-badge&logo=Ethereum&logoColor=white)
 
 
 
