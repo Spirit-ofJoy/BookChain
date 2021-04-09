@@ -5,7 +5,8 @@
 &nbsp;
 ![Built with Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 &nbsp;
-![Built with BlockChain](https://img.shields.io/badge/Blockchain-000000?style=for-the-badge&logo=blockchain&logoColor=white)
+![Built with BlockChain](https://img.shields.io/badge/Blockchain-000000?style=for-the-badge&logo=Blockchain.com&logoColor=white)
+
 
 
 This repository is for the GUI Server for the web application built for Hack36 2021 by Baracuda Viktara. 
