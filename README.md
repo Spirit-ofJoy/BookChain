@@ -1,6 +1,7 @@
 <!-- Heading1(Title) -->
 <h1 align = center>BookChain :book:</font></h1>
 
+<div>
 ![Built with React](https://img.shields.io/badge/React-000000?style=for-the-badge&logo=react&logoColor=61DAFB)
 &nbsp;
 ![Built with Babel](https://img.shields.io/badge/Babel-F9DC3E?style=for-the-badge&logo=Babel&logoColor=white)
@@ -10,7 +11,7 @@
 ![Built with BlockChain](https://img.shields.io/badge/Blockchain-121D33?style=for-the-badge&logo=Blockchain.com&logoColor=white)
 &nbsp;
 ![Built with Ethereum](https://img.shields.io/badge/Ethereum-3B80AE?style=for-the-badge&logo=Ethereum&logoColor=white)
-
+</div>
 
 
 This repository is for the GUI Server for the web application built for Hack36 2021 by Baracuda Viktara. 
