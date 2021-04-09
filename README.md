@@ -20,7 +20,7 @@ You can have a hassalfree experience testing the app on the website [lmao.com](l
 * Make sure that you have the current [LTS version of Node.JS](https://nodejs.org/en/) installed on your PC. You can check using the command ```node -v``` on the commandline. Else you can head to the node.js website, download it and install it before proceeding forword.  
 * Clone the repository with the following command or download the compressed zip file using this [link](https://github.com/ayayushsharma/hack36-frontend/archive/refs/heads/master.zip)
 ```
-git clone https://github.com/ayayushsharma/hack36-frontend
+git clone https://github.com/Spirit-ofJoy/BookChain
 ```
 
 * Navigate to the repository and open terminal. You can also open it in your Code editor of choice.
