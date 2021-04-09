@@ -1,5 +1,11 @@
-# BookChain :book:
-![Built with - React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+<!-- Heading1(Title) -->
+<h1 align = center>BookChain :book:</font></h1>
+
+![Built with React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+&nbsp;
+![Built with Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+&nbsp;
+![Built with BlockChain](https://img.shields.io/badge/Blockchain-000000?style=for-the-badge&logo=blockchain&logoColor=white)
 
 
 This repository is for the GUI Server for the web application built for Hack36 2021 by Baracuda Viktara. 
@@ -14,7 +20,7 @@ You can have a hassalfree experience testing the app on the website [lmao.com](l
 * Make sure that you have the current [LTS version of Node.JS](https://nodejs.org/en/) installed on your PC. You can check using the command ```node -v``` on the commandline. Else you can head to the node.js website, download it and install it before proceeding forword.  
 * Clone the repository with the following command or download the compressed zip file using this [link](https://github.com/ayayushsharma/hack36-frontend/archive/refs/heads/master.zip)
 ```
-git clone https://github.com/Spirit-ofJoy/BookChain BookChain
+git clone https://github.com/ayayushsharma/hack36-frontend
 ```
 
 * Navigate to the repository and open terminal. You can also open it in your Code editor of choice.
