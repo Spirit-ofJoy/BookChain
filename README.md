@@ -4,11 +4,13 @@
 <div>
 ![Built with React](https://img.shields.io/badge/React-000000?style=for-the-badge&logo=react&logoColor=61DAFB)
 &nbsp;
-![Built with Babel](https://img.shields.io/badge/Babel-F9DC3E?style=for-the-badge&logo=Babel&logoColor=white)
+![Built with Babel](https://img.shields.io/badge/Babel-F9DC3E?style=for-the-badge&logo=Babel&logoColor=black)
 &nbsp;
 ![Built with Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 &nbsp;
 ![Built with BlockChain](https://img.shields.io/badge/Blockchain-121D33?style=for-the-badge&logo=Blockchain.com&logoColor=white)
+&nbsp;
+![Built with Mocha](https://img.shields.io/badge/Mocha-8D6748?style=for-the-badge&logo=Mocha&logoColor=white)
 &nbsp;
 ![Built with Ethereum](https://img.shields.io/badge/Ethereum-3B80AE?style=for-the-badge&logo=Ethereum&logoColor=white)
 </div>
