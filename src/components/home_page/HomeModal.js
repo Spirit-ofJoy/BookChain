@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {motion} from 'framer-motion';
+
 
 import './HomeModal.css'
 import textGif from './images/BookChain-text-vid.gif'

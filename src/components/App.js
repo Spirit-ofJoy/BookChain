@@ -13,7 +13,7 @@ import Network from './Network'
 import Main from './Main'
 import Dashboard from './Dashboard'
 import Blogs from "../components/blogs/Blog_List"
-import HomePage from './home_page/Home';
+import HomePage from '../components/home_page/Home';
 // import Dash from "../components/views/Dashboard/Dashboard"
 
 class App extends Component {
@@ -43,7 +43,7 @@ class App extends Component {
     this.setState({ account: accounts[0] })
     const networkId = await web3.eth.net.getId()
     const networkData = Marketplace.networks[networkId]
-    if(networkData) {
+    if (networkData) {
       const marketplace = new web3.eth.Contract(Marketplace.abi, networkData.address)
       this.setState({ marketplace })
       const productCount = await marketplace.methods.productCount().call()
@@ -55,7 +55,7 @@ class App extends Component {
           products: [...this.state.products, product]
         })
       }
-      
+
       const postCount = await marketplace.methods.postCount().call()
       this.setState({ postCount })
       // Load Posts
@@ -65,7 +65,7 @@ class App extends Component {
           posts: [...this.state.posts, post]
         })
       }
-      this.setState({ loading: false})
+      this.setState({ loading: false })
       // // Sort posts. Show highest tipped posts first
       // this.setState({
       //   posts: this.state.posts.sort((a) => a.postCount )
@@ -93,26 +93,26 @@ class App extends Component {
   createPost(heading, content) {
     this.setState({ loading: true })
     this.state.marketplace.methods.createPost(heading, content).send({ from: this.state.account })
-    .once('receipt', (receipt) => {
-      this.setState({ loading: false })
-    })
+      .once('receipt', (receipt) => {
+        this.setState({ loading: false })
+      })
   }
 
 
   createProduct(name, info, author, price) {
     this.setState({ loading: true })
     this.state.marketplace.methods.createProduct(name, info, author, price).send({ from: this.state.account })
-    .once('receipt', (receipt) => {
-      this.setState({ loading: false })
-    })
+      .once('receipt', (receipt) => {
+        this.setState({ loading: false })
+      })
   }
 
   purchaseProduct(id, price) {
     this.setState({ loading: true })
     this.state.marketplace.methods.purchaseProduct(id).send({ from: this.state.account, value: price })
-    .once('receipt', (receipt) => {
-      this.setState({ loading: false })
-    })
+      .once('receipt', (receipt) => {
+        this.setState({ loading: false })
+      })
   }
 
   render() {
@@ -120,13 +120,14 @@ class App extends Component {
       <div>
         <BrowserRouter>
           <Switch>
+            <Route path="/" exact>
+              <HomePage />
+            </Route>
+
             <Route>
               <Navbar account={this.state.account} />
               <Switch>
 
-                <Route path="/" exact>
-                  <HomePage />
-                </Route>
 
                 <Route path="/main" exact>
                   {/* <Loading time={2} /> */}
@@ -141,10 +142,10 @@ class App extends Component {
                 <Route path="/dashboard" exact>
                   {/* <Dash /> */}
                   <Dashboard
-                  account={this.state.account}
-                  products={this.state.products}
-                  createProduct={this.createProduct}
-                  purchaseProduct={this.purchaseProduct} 
+                    account={this.state.account}
+                    products={this.state.products}
+                    createProduct={this.createProduct}
+                    purchaseProduct={this.purchaseProduct}
                   />
                 </Route>
 
@@ -165,8 +166,8 @@ class App extends Component {
               </Switch>
             </Route>
           </Switch>
-      </BrowserRouter>
-        
+        </BrowserRouter>
+
       </div>
     );
   }
