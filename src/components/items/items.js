@@ -80,7 +80,7 @@ class ItemBox extends Component {
     const CardList = AllCardDetails.map((ParticularCard) => {
       return (
         <div
-          className="col-lg-6vcol-sm-12 col-12 whole-item-container-div"
+          className="col-12 whole-item-container-div"
           id={ParticularCard.itemID}
         >
           <div className="book-in-item-box">
