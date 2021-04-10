@@ -30,6 +30,15 @@
   transition: top 0.4s ease-in-out;
 }
 
+.textfont {
+  font-family: Audiowide;
+  font-style: italic;
+}
+
+.itemfont {
+  font-size: larger;
+}
+
 .top-bottom {
   padding: 10px 0;
   position: sticky;

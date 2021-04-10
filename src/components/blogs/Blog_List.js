@@ -51,7 +51,7 @@ class BlogList extends Component {
                 }}>
                 <div className="form-group mr-sm-2">
                 <div class="form-group">
-                <label for="postHeading">Topic</label>
+                <label for="postHeading"></label>
                   <select id="postHeading" className="form-control"  ref={(input) => { this.postHeading = input }} required >
                     <option>others</option>
                     <option>added</option>

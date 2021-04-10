@@ -11,7 +11,7 @@ import Marketplace from '../abis/Marketplace.json'
 import Navbar from './Navbar'
 import Network from './Network'
 import Main from './Main'
-import Dashboard from './views/Dashboard/Dashboard'
+import Dashboard from './Dashboard'
 import Loading from "./Loading"
 import Blogs from "../components/blogs/Blog_List"
 // import Dash from "../components/views/Dashboard/Dashboard"
@@ -135,10 +135,10 @@ class App extends Component {
         <Route path="/dashboard" exact>
               {/* <Dash /> */}
               <Dashboard 
-                // account={this.state.account}
-                // products={this.state.products}
-                // createProduct={this.createProduct}
-                // purchaseProduct={this.purchaseProduct} 
+                account={this.state.account}
+                products={this.state.products}
+                createProduct={this.createProduct}
+                purchaseProduct={this.purchaseProduct} 
               />
       </Route>
         <Route path="/network" exact>

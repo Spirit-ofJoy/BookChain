@@ -56,9 +56,12 @@ class Blog extends Component {
           <div className="blog-content-div">
             <p className="blog-content blog-padding-content">
               {ParticularCard.content}
-              <br />
-              <span className="blog-blogger-name">
-                - User: <Link>{ParticularCard.writer}</Link>
+              {/* <br /> */}
+              
+            </p>
+            <p style={{textAlign:"right"}}>
+            <span className="blog-blogger-name">
+                -  <Link style={{color:"white"}}>{ParticularCard.writer}</Link>
               </span>
             </p>
           </div>

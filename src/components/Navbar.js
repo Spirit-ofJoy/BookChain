@@ -13,7 +13,7 @@ class Navigbar extends Component {
         collapseOnSelect
         expand="lg"
         variant="light"
-        className="style top-bottom starbg"
+        className="style top-bottom starbg textfont"
         id="navbar"
       >
         <Navbar.Brand href="/" className="title-nav">
@@ -23,11 +23,11 @@ class Navigbar extends Component {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
 
-            <Nav.Link eventKey="blogs" hresname="nav-items" href="/dashboard">
+            <Nav.Link className="itemfont" eventKey="blogs" hresname="nav-items" href="/dashboard">
               Dashboard
             </Nav.Link>
 
-            <Nav.Link eventKey="blogs" href="/network" className="nav-items">
+            <Nav.Link className="itemfont" eventKey="blogs" href="/network" className="nav-items">
               Discussion
             </Nav.Link>
              
