@@ -16,7 +16,6 @@
 
 
 This repository is for the GUI Server for the web application built for Hack36 2021 by Baracuda Viktara. 
-Built with react and hopefully, HOPEFULLY we will host it so everyone can see it. 
 
 Keep tuned for all the updates
 
@@ -29,15 +28,16 @@ Keep tuned for all the updates
 <!-- Installation -->
 <p id="Installation"><h2><font>🚀 Installation </font></h2></p>
 
-You can have a hassle-free experience testing the app on the website [lmao.com](lmao.com). If you want to test the code, you can do it by following these few steps 
+If you want to test the code, you can do it by following these few steps 
 * Make sure that you have the current [LTS version of Node.JS](https://nodejs.org/en/) installed on your PC. You can check using the command ```node -v``` on the commandline. Else you can head to the node.js website, download it and install it before proceeding forword.  
-* Clone the repository with the following command or download the compressed zip file using this [link](https://github.com/ayayushsharma/hack36-frontend/archive/refs/heads/master.zip)
+* Make sure you have the Metamask Chrome extension installed. Head over and refer to [here](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en) to install the extension and enable it in your browser.
+* Clone the repository with the following command or download the compressed zip file using this [link](https://github.com/Spirit-ofJoy/BookChain/archive/refs/heads/master.zip)
 ```
 git clone https://github.com/Spirit-ofJoy/BookChain
 ```
 
 * Navigate to the repository and open terminal. You can also open it in your code editor of choice. However for simplicity we recommend Visual Studio Code.
-* Enter in the the following command in the terminal wait till node package manager install all the dependencies 
+* Enter in the the following command in the terminal wait till node package manager installs all the dependencies 
 ```
 npm install
 ```
@@ -49,7 +49,7 @@ npm start
 * After this the code will start compiling and after it has compiled the code, you can head to [http://localhost:3000](http://localhost:3000) and try the app yourself
 
 <p id="License"><h2><font>📘 License </font></h2></p>
-<font face = "Verdana"> Distributed under the MIT License. Refer to the <a href="https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt">following</a> for more information.</font>
+<font face = "Verdana"> Created under the MIT License. Refer to the <a href="https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt">following</a> for more information.</font>
 
 <p id="Developers"><h2><font> :pencil: Contributors </font></h2></p>
 <UL>
