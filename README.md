@@ -43,9 +43,17 @@ npm start
 ```
 * After this the code will start compiling and after it has compiled the code, you can head to [http://localhost:3000](http://localhost:3000) and try the app yourself
 
-## Contributors (Alphabetically) :smile: 
+<p id="About"><h2><font>:beginner: About </font></h2></p>
+<br>
+<!-- Description -->
+<font face = "Verdana"> A blockchain-powered twist to the re-sale of used books and other commodities with a focus on annonymity and cryptocurrency-based transactions </font>
 
-* [Abhinav Anand](https://github.com/me-abhinav-1001)
-* [Aryan Khandelwal](https://github.com/Ark2307)
-* [Ayush Sharma](https://github.com/ayayushsharma)
-* [Yashendu Pandey](https://github.com/Spirit-ofJoy)
+
+<p id="Developers"><h2><font> :pencil: Contributors </font></h2></p>
+<UL>
+    <li><a href = "https://https://github.com/me-abhinav-1001"> Abhinav Anand </a> 
+    <li><a href = "https://github.com/Spirit-ofJoy"> Yashendu Paresh Pandey </a>
+    <li><a href = "https://github.com/ayayushsharma"> Ayush Sharma</a>
+    <li><a href = "https://github.com/Ark2307"> Aryan Khandelwal</a>
+    
+</UL>
