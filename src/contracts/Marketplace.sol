@@ -30,8 +30,6 @@ contract Marketplace {
         address payable author
     );
 
-
-
     event ProductCreated(
         uint id,
         string name,
