@@ -225,7 +225,8 @@ class Main extends Component {
                           <th scope="col"></th>
                         </tr>
                       </thead>
-                      <tbody id="productList">
+                      {/* <div> */}
+                      <tbody id="productList" className="tableborder">
                         {this.props.products.map((product, key) => {
                           return (
                             <tr key={key}>
@@ -255,6 +256,7 @@ class Main extends Component {
                         })}
                       </tbody>
                     </table>
+                    {/* </div> */}
                   </Jumbotron></div>
                 <p>&nbsp;</p>
               </div>
