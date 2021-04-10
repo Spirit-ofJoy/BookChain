@@ -1,0 +1,175 @@
+:root {
+  --smallest-width-of-icon-box: 300px;
+  --width-of-icon-box: 20%;
+  --icon-box-welcome-page-background-radius: 60px;
+  --animation-welcome-page-length: 20s;
+}
+
+.outermost-square-rounded-icon {
+  position: relative;
+  min-width: var(--smallest-width-of-icon-box);
+  min-height: var(--smallest-width-of-icon-box);
+  height: var(--smallest-width-of-icon-box);
+  width: var(--smallest-width-of-icon-box);
+  background-color: rgb(255, 255, 255);
+  border-radius: var(--icon-box-welcome-page-background-radius);
+  display: grid;
+  place-items: center;
+}
+
+.svg-used-on-welcome-page-screen-1 {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  display: grid;
+  place-items: center;
+  animation: and-go var(--animation-welcome-page-length)
+  cubic-bezier(1,.02,.99,.01) infinite;
+}
+
+.svg-used-on-welcome-page-screen-1 > svg {
+  width: 80%;
+  height: 80%;
+  z-index: 9999;
+}
+
+@keyframes and-go {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  6.66% {
+    opacity: 0.9;
+  }
+
+  27.66% {
+    opacity: 1;
+  }
+
+  30% {
+    display: none;
+    opacity: 0;
+  }
+
+  100% {
+    display: none;
+    opacity: 0;
+  }
+}
+
+/*
+@keyframes and-go {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+*/
+#quotes-screen-2,
+#stack-of-books-welcome-page {
+  animation-delay: calc(-2 * var(--animation-welcome-page-length) / 3);
+}
+#quotes-screen-3,
+#book-reader-welcome-page {
+  animation-delay: calc(-1 * var(--animation-welcome-page-length) / 3);
+}
+
+#quotes-screen-1,
+#money-exchange-welcome-page {
+  animation-delay: calc(-1 * var(--animation-welcome-page-length));
+}
+
+.bottom-quotes-container-div {
+  position: absolute;
+  bottom: 0;
+  padding: 30px;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+}
+
+.bottom-quotes-screen-1 {
+  text-align: center;
+  animation: and-go var(--animation-welcome-page-length)
+    cubic-bezier(1, 0, 1, 0.12) infinite;
+}
+
+.vsjnv {
+  fill: #ff7069;
+}
+
+.vouev {
+  fill: #fec982;
+}
+
+.vouev1 {
+  fill: #ffd190;
+}
+.vouev2 {
+  fill: #ffd190;
+}
+.vouev3 {
+  fill: #6b7f9e;
+}
+.vouev4 {
+  fill: #ffffff;
+}
+.vouev5 {
+  fill: #8597b1;
+}
+.vouev6 {
+  fill: #ffd190;
+}
+.vouev7 {
+  fill: #fff1df;
+}
+.vouev8 {
+  fill: #ffffff;
+}
+.vouev9 {
+  fill: #ffd190;
+}
+.vouev10 {
+  fill: #ffffff;
+}
+.vouev11 {
+  fill: #ffe356;
+}
+.vouev12 {
+  fill: #fcd34e;
+}
+.vouev13 {
+  fill: #ffe356;
+}
+.vouev14 {
+  fill: #ffe356;
+}
+.vouev15 {
+  fill: #ffd190;
+}
+.vouev16 {
+  fill: #ffffff;
+}
+.vouev17 {
+  fill: #6b7f9e;
+}
+.vouev18 {
+  fill: #ffffff;
+}
+.vouev19 {
+  fill: #8597b1;
+}

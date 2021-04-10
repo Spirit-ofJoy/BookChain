@@ -10,8 +10,16 @@ import './App.css';
 import Marketplace from '../abis/Marketplace.json'
 import Navbar from './Navbar'
 import Network from './Network'
-import Main from './Main'
-import Dashboard from './Dashboard'
+// import Main from './Main'
+// import Dashboard from './Dashboard'
+import A from "./Z_Final/addShowProduct";
+import B from "./Z_Final/searchProducts_history";
+
+import C from "./Z_Final/ownedItems";
+import D from "./Z_Final/forSelling";
+
+import Background from "./background_star/background";
+// import Loading from "../components/home_page/Loading";
 import Blogs from "../components/blogs/Blog_List"
 import HomePage from '../components/home_page/Home';
 // import Dash from "../components/views/Dashboard/Dashboard"
@@ -129,19 +137,10 @@ class App extends Component {
               <Switch>
 
 
-                <Route path="/main" exact>
-                  {/* <Loading time={2} /> */}
-                  <Main
-                    account={this.state.account}
-                    products={this.state.products}
-                    createProduct={this.createProduct}
-                    purchaseProduct={this.purchaseProduct} />
-                </Route>
-
-
-                <Route path="/dashboard" exact>
-                  {/* <Dash /> */}
-                  <Dashboard
+              <Route path="/productAdd" exact>
+                  <Background />
+                  {/* <Loading time={0.3} /> */}
+                  <A
                     account={this.state.account}
                     products={this.state.products}
                     createProduct={this.createProduct}
@@ -149,6 +148,37 @@ class App extends Component {
                   />
                 </Route>
 
+                <Route path="/ItemsOnSale" exact>
+                  <Background />
+                  <D
+                    account={this.state.account}
+                    products={this.state.products}
+                    createProduct={this.createProduct}
+                    purchaseProduct={this.purchaseProduct}
+                  />
+                </Route>
+
+                <Route path="/ItemsOwned" exact>
+                  <Background />
+
+                  <C
+                    account={this.state.account}
+                    products={this.state.products}
+                    createProduct={this.createProduct}
+                    purchaseProduct={this.purchaseProduct}
+                  />
+                </Route>
+
+                <Route path="/search" exact>
+                  <Background />
+
+                  <B
+                    account={this.state.account}
+                    products={this.state.products}
+                    createProduct={this.createProduct}
+                    purchaseProduct={this.purchaseProduct}
+                  />
+                </Route>
                 <Route path="/network" exact>
                   <Blogs
                     account={this.state.account}
