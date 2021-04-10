@@ -28,7 +28,7 @@ const HomeModal = (props) => {
                         </div>
                         <div className="card-body">
                             <p className="card-text">Click here to head on over to the demo appliciation page.</p>
-                            <button type="button" className="btn btn-dark" id="go-to-app-btn">Go to App</button>
+                            <a href="http://localhost:3000/main"><button type="button" className="btn btn-dark" id="go-to-app-btn">Go to App</button></a>
                         </div>
                     </div>
                     <div className="card col" style={{ width: '18rem' }}>

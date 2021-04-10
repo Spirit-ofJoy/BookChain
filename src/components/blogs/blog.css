@@ -83,13 +83,16 @@ Blog Post Heading Icon Animation key frames
 
 .blog-padding-content {
   font-family: "Lato", sans-serif;
-  font-size: larger;
+  color: rgb(210, 255, 255);
+  font-size: 1.5rem;
   letter-spacing: 0.075rem;
   padding: 20px;
   margin: 0;
 }
 
 .blog-blogger-name {
+  color: aliceblue;
+  font-weight: bolder;
   font-style: italic;
   padding-left: 20px;
   font-size: medium;
