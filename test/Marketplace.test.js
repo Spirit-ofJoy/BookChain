@@ -4,7 +4,7 @@ require('chai')
   .use(require('chai-as-promised'))
   .should()
 
-contract('Marketplace', ([deployer, seller, buyer, author]) => {
+contract('Marketplace', ([deployer, seller, buyer, writer]) => {
   let marketplace
 
   before(async () => {
@@ -30,7 +30,7 @@ contract('Marketplace', ([deployer, seller, buyer, author]) => {
     let result, productCount
 
     before(async () => {
-      result = await marketplace.createProduct('iPhone X', web3.utils.toWei('1', 'Ether'), { from: seller })
+      result = await marketplace.createProduct('iPhone X','info', 'author', web3.utils.toWei('1', 'Ether'), { from: seller })
       productCount = await marketplace.productCount()
     })
 
@@ -40,25 +40,25 @@ contract('Marketplace', ([deployer, seller, buyer, author]) => {
       const event = result.logs[0].args
       assert.equal(event.id.toNumber(), productCount.toNumber(), 'id is correct')
       assert.equal(event.name, 'iPhone X', 'name is correct')
-      assert.equal(event.info, 'bekaar Phone', 'info is correct')
-      assert.equal(event.author, 'Steve Jobs', 'Author is correct')
+      assert.equal(event.info, 'info', 'info is correct')
+      assert.equal(event.author, 'author', 'author is correct')
       assert.equal(event.price, '1000000000000000000', 'price is correct')
       assert.equal(event.owner, seller, 'owner is correct')
       assert.equal(event.purchased, false, 'purchased is correct')
       assert.equal(event.seller, seller, 'seller is correct')
 
       // FAILURE: Product must have a name
-      await await marketplace.createProduct('', web3.utils.toWei('1', 'Ether'), { from: seller }).should.be.rejected;
+      await await marketplace.createProduct('', '', '', web3.utils.toWei('1', 'Ether'), { from: seller }).should.be.rejected;
       // FAILURE: Product must have a price
-      await await marketplace.createProduct('iPhone X', 0, { from: seller }).should.be.rejected;
+      await await marketplace.createProduct('iPhone X', 'info', 'author', 0, { from: seller }).should.be.rejected;
     })
 
     it('lists products', async () => {
       const product = await marketplace.products(productCount)
       assert.equal(product.id.toNumber(), productCount.toNumber(), 'id is correct')
       assert.equal(product.name, 'iPhone X', 'name is correct')
-      assert.equal(product.info, 'bekaar Phone', 'info is correct')
-      assert.equal(product.author, 'Steve Jobs', 'Author is correct')
+      assert.equal(product.info, 'info', 'info is correct')
+      assert.equal(product.author, 'author', 'Author is correct')
       assert.equal(product.price, '1000000000000000000', 'price is correct')
       assert.equal(product.owner, seller, 'owner is correct')
       assert.equal(product.purchased, false, 'purchased is correct')
@@ -78,8 +78,8 @@ contract('Marketplace', ([deployer, seller, buyer, author]) => {
       const event = result.logs[0].args
       assert.equal(event.id.toNumber(), productCount.toNumber(), 'id is correct')
       assert.equal(event.name, 'iPhone X', 'name is correct')
-      assert.equal(event.info, 'bekaar Phone', 'info is correct')
-      assert.equal(event.author, 'Steve Jobs', 'Author is correct')
+      assert.equal(event.info, 'info', 'info is correct')
+      assert.equal(event.author, 'author', 'Author is correct')
       assert.equal(event.price, '1000000000000000000', 'price is correct')
       assert.equal(event.owner, buyer, 'owner is correct')
       assert.equal(event.purchased, true, 'purchased is correct')
@@ -113,7 +113,7 @@ contract('Marketplace', ([deployer, seller, buyer, author]) => {
     let result, postCount
 
     before(async () => {
-      result = await marketplace.createPost('This is my first post', { from: author })
+      result = await marketplace.createPost('This is my first post', { from: writer })
       postCount = await marketplace.postCount()
     })
 
@@ -123,19 +123,17 @@ contract('Marketplace', ([deployer, seller, buyer, author]) => {
       const event = result.logs[0].args
       assert.equal(event.id.toNumber(), postCount.toNumber(), 'id is correct')
       assert.equal(event.content, 'This is my first post', 'content is correct')
-      assert.equal(event.tipAmount, '0', 'tip amount is correct')
-      assert.equal(event.author, author, 'author is correct')
+      assert.equal(event.writer, writer, 'writer is correct')
 
       // FAILURE: Post must have content
-      await marketplace.createPost('', { from: author }).should.be.rejected;
+      await marketplace.createPost('', { from: writer }).should.be.rejected;
     })
 
     it('lists posts', async () => {
       const post = await marketplace.posts(postCount)
       assert.equal(post.id.toNumber(), postCount.toNumber(), 'id is correct')
       assert.equal(post.content, 'This is my first post', 'content is correct')
-      assert.equal(post.tipAmount, '0', 'tip amount is correct')
-      assert.equal(post.author, author, 'author is correct')
+      assert.equal(post.writer, writer, 'writer is correct')
     })
 
   })
