@@ -14,6 +14,7 @@ import Main from './Main'
 import Dashboard from './views/Dashboard/Dashboard'
 import Loading from "./Loading"
 import Blogs from "../components/blogs/Blog_List"
+import HomePage from './home_page/Home';
 // import Dash from "../components/views/Dashboard/Dashboard"
 
 class App extends Component {
@@ -118,46 +119,54 @@ class App extends Component {
   render() {
     return (
       <div>
-      <BrowserRouter>
-      <Switch>
-      <Route>
-      <Navbar account={this.state.account} />
+        <BrowserRouter>
           <Switch>
-          <Route path="/" exact>
-          <Loading time={2} />
-          <Main
-                account={this.state.account}
-                products={this.state.products}
-                createProduct={this.createProduct}
-                purchaseProduct={this.purchaseProduct} />
-      </Route>
-        
-        <Route path="/dashboard" exact>
-              {/* <Dash /> */}
-              <Dashboard 
-                // account={this.state.account}
-                // products={this.state.products}
-                // createProduct={this.createProduct}
-                // purchaseProduct={this.purchaseProduct} 
-              />
-      </Route>
-        <Route path="/network" exact>
+            <Route>
+              <Navbar account={this.state.account} />
+              <Switch>
+
+                <Route path="/" exact>
+                  <HomePage />
+                </Route>
+
+                <Route path="/main" exact>
+                  {/* <Loading time={2} /> */}
+                  <Main
+                    account={this.state.account}
+                    products={this.state.products}
+                    createProduct={this.createProduct}
+                    purchaseProduct={this.purchaseProduct} />
+                </Route>
+
+
+                <Route path="/dashboard" exact>
+                  {/* <Dash /> */}
+                  <Dashboard
+                  // account={this.state.account}
+                  // products={this.state.products}
+                  // createProduct={this.createProduct}
+                  // purchaseProduct={this.purchaseProduct} 
+                  />
+                </Route>
+
+                <Route path="/network" exact>
                   <Blogs
                     account={this.state.account}
-                    posts = {this.state.posts}
+                    posts={this.state.posts}
                     createPost={this.createPost}
-                    />
+                  />
 
-              {/* <Network
+                  {/* <Network
                     account={this.state.account}
                     posts={this.state.posts}
                     createPost={this.createPost}
                     
                   /> */}
-      </Route>
-      </Switch>
-      </Route>
-      </Switch></BrowserRouter>
+                </Route>
+              </Switch>
+            </Route>
+          </Switch>
+      </BrowserRouter>
         
       </div>
     );
