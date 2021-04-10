@@ -15,9 +15,9 @@
 
 
 
-This repository is for the GUI Server for the web application built for Hack36 2021 by Baracuda Viktara. 
+This is the repository for the project BookChain, a web application built for Hack36 2021 by Baracuda Viktara. 
 
-Keep tuned for all the updates
+<a href="https://hack36.com"> <img src="http://bit.ly/BuiltAtHack36" height=28px> </a>
 
 <p id="About"><h2><font>:beginner: About </font></h2></p>
 <br>
