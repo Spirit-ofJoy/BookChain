@@ -10,8 +10,15 @@ import './App.css';
 import Marketplace from '../abis/Marketplace.json'
 import Navbar from './Navbar'
 import Network from './Network'
-import Main from './Main'
-import Dashboard from './Dashboard'
+// import Main from './Main'
+// import Dashboard from './Dashboard'
+
+import A from './../A'
+import B from './../B'
+
+import C from './../C'
+import D from './../D'
+
 import Loading from "./Loading"
 
 class App extends Component {
@@ -122,21 +129,40 @@ class App extends Component {
           <Switch>
           <Route path="/" exact>
           <Loading time={2} />
-          <Main
+          <A
                 account={this.state.account}
                 products={this.state.products}
                 createProduct={this.createProduct}
                 purchaseProduct={this.purchaseProduct} />
       </Route>
-        
-        <Route path="/dashboard" exact>
-              <Dashboard 
+
+        <Route path="/d" exact>
+              <D
                 account={this.state.account}
                 products={this.state.products}
                 createProduct={this.createProduct}
-                purchaseProduct={this.purchaseProduct} 
+                purchaseProduct={this.purchaseProduct}
               />
       </Route>
+
+      <Route path="/c" exact>
+            <C
+              account={this.state.account}
+              products={this.state.products}
+              createProduct={this.createProduct}
+              purchaseProduct={this.purchaseProduct}
+            />
+    </Route>
+
+    <Route path="/b" exact>
+          <B
+            account={this.state.account}
+            products={this.state.products}
+            createProduct={this.createProduct}
+            purchaseProduct={this.purchaseProduct}
+          />
+  </Route>
+
         <Route path="/network" exact>
               <Network
                     posts={this.state.posts}
@@ -147,7 +173,7 @@ class App extends Component {
       </Switch>
       </Route>
       </Switch></BrowserRouter>
-        
+
       </div>
     );
   }

@@ -23,14 +23,26 @@ class Navigbar extends Component {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
 
-            <Nav.Link eventKey="blogs" hresname="nav-items" href="/dashboard">
-              Dashboard
+            <Nav.Link eventKey="blogs" hresname="nav-items" href="/c">
+              C
+            </Nav.Link>
+
+            <Nav.Link eventKey="blogs" hresname="nav-items" href="/b">
+              B
+            </Nav.Link>
+
+            <Nav.Link eventKey="blogs" hresname="nav-items" href="/d">
+              D
+            </Nav.Link>
+
+            <Nav.Link eventKey="blogs" hresname="nav-items" href="/">
+              A
             </Nav.Link>
 
             <Nav.Link eventKey="blogs" href="/network" className="nav-items">
               Discussion
             </Nav.Link>
-             
+
           </Nav>
           <ul className="navbar-nav px-3">
            <li className="nav-item text-nowrap d-none d-sm-none d-sm-block">
@@ -48,7 +60,7 @@ class Navigbar extends Component {
       //   >
       //     BookChain
       //   </a>
-        
+
       //   <a className="nav-link" href="/dashboard">Dashboard <span className="sr-only">Dashboard</span></a>
       //   <a className="nav-link" href="/network">Discussion <span className="sr-only">Discussion</span></a>
       //   <ul className="navbar-nav px-3">
