@@ -132,10 +132,10 @@ class App extends Component {
         
         <Route path="/dashboard" exact>
               <Dashboard 
-                account={this.state.account}
-                products={this.state.products}
-                createProduct={this.createProduct}
-                purchaseProduct={this.purchaseProduct} 
+                // account={this.state.account}
+                // products={this.state.products}
+                // createProduct={this.createProduct}
+                // purchaseProduct={this.purchaseProduct} 
               />
       </Route>
         <Route path="/network" exact>
