@@ -1,0 +1,119 @@
+:root {
+  --item-box-padding-top-and-botton: 20px;
+  --item-buy-button-color: rgb(0, 119, 255);
+  --item-box-border-radius: 30px;
+  --item-box-border-thickness: 1px;
+  --item-box-transition-duration: 0.3s ease;
+  --book-in-item-box-width: 150px;
+}
+
+.indent-text {
+  padding-left: 10px;
+}
+
+.whole-item-container-div {
+  position: relative;
+  font-family: Roboto, Arial, sans-serif;
+  border-top-left-radius: var(--item-box-border-radius);
+  border-bottom-right-radius: 32px;
+  border: var(--item-box-border-thickness) solid rgba(0, 0, 0, 0.1);
+  transition: var(--item-box-transition-duration);
+  letter-spacing: 1px;
+  min-height: 11rem;
+  display: flex;
+}
+
+.whole-item-container-div:hover {
+  box-shadow: 0px 0 50px 0 rgba(0, 0, 0, 0.15);
+  transform: scale(1.003);
+}
+
+.book-in-item-box {
+  height: 100%;
+  width: var(--book-in-item-box-width);
+  display: grid;
+  place-items: center;
+}
+
+.book-svg-in-item-box {
+  max-width: 80%;
+  width: auto;
+  height: 60%;
+}
+
+.heading-of-item-box {
+  padding-top: var(--item-box-padding-top-and-botton);
+}
+
+h1.item-name {
+  font-size: 2rem;
+}
+
+.item-box-label {
+  font-size: medium;
+}
+
+h4.item-box-label {
+  font-size: 0.9rem;
+  padding-bottom: 10px;
+}
+
+.item-price-in-box {
+  position: absolute;
+  right: calc(-1 * var(--item-box-border-thickness));
+  padding-right: 20px;
+}
+
+.item-price-in-box a {
+  text-decoration: none;
+  font-size: large;
+}
+
+.list-more-detail {
+  list-style: none;
+  list-style-image: none;
+}
+
+.list-check-item-more-detail-icon {
+  color: black;
+  letter-spacing: -0.9rem;
+  vertical-align: middle;
+  font-size: 1.25rem;
+}
+
+.list-check-item-more-detail > span {
+  padding-right: 1rem;
+}
+
+.buy-item-now-button {
+  position: absolute;
+  right: calc(-1 * var(--item-box-border-thickness));
+  bottom: calc(-1 * var(--item-box-border-thickness));
+  font-size: 1.125rem;
+  border-top-left-radius: var(--item-box-border-radius);
+  border-bottom-right-radius: var(--item-box-border-radius);
+  color: white;
+  font-weight: bold;
+  padding: 20px 20px;
+  background-color: var(--item-buy-button-color);
+  border: none;
+  user-select: none;
+  transition: var(--item-box-transition-duration);
+}
+
+.buy-item-now-button:hover {
+  box-shadow: 0px 0 50px 0 rgba(0, 0, 0, 0.3) inset;
+}
+
+
+
+/*No Items In the List Styling*/
+.no-items-in-the-list {
+  padding-top: 10rem ;
+  font-size:2rem;
+  display:grid;
+  justify-items: center;
+  text-align: center;
+  color:rgb(165, 165, 165);
+  user-select: none;
+}

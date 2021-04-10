@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description"
+        content="Hey, wanna be sure by Voting everything out? Join us to make the right decisions everytime" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <title>BookChain</title>
+</head>
+
+<style>
+    :root {
+        --item-box-padding-top-and-botton: 20px;
+        --item-buy-button-color: rgb(0, 119, 255);
+        --item-box-border-radius: 30px;
+        --item-box-border-thickness: 1px;
+        --item-box-transition-duration: 0.3s ease;
+    }
+
+    #root {
+        position: absolute;
+        /*position: fixed;*/
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        background-color: var(--login-signup-page-background-color);
+    }
+
+    .whole-item-container-div {
+        position: relative;
+        font-family: Roboto, Arial, sans-serif;
+        border-top-left-radius: var(--item-box-border-radius);
+        border-bottom-right-radius: 32px;
+        border: var(--item-box-border-thickness) solid rgba(0, 0, 0, 0.10);
+        padding-top: var(--item-box-padding-top-and-botton);
+        transition: var(--item-box-transition-duration);
+        letter-spacing: 1px;
+    }
+
+    .whole-item-container-div:hover {
+        box-shadow: 0px 0 50px 0 rgba(0, 0, 0, 0.15);
+    }
+
+    .buy-item-now {
+        position: relative;
+        float: right;
+    }
+
+
+    .item-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    svg {
+        size: inherit;
+    }
+
+
+    .buy-item-now-button {
+        position: absolute;
+        right: calc(-1*var(--item-box-border-thickness));
+        bottom: calc(-1*var(--item-box-border-thickness));
+        font-size: 1.125rem;
+        border-top-left-radius: var(--item-box-border-radius);
+        border-bottom-right-radius: var(--item-box-border-radius);
+        color: white;
+        font-weight: bold;
+        padding: 20px 20px;
+        background-color: var(--item-buy-button-color);
+        border: none;
+    }
+
+    .buy-item-now-button:hover {
+        box-shadow: 0px 0 50px 0 rgba(0, 0, 0, 0.3) inset;
+    }
+
+    .item-box-label {
+        font-size:medium;
+    }
+
+    h4.item-box-label {
+        font-size:0.9rem;
+    }
+
+    .indent-text {
+        padding-left: 10px;
+    }
+</style>
+
+<body>
+    <div id="root">
+        <div class="container" style="margin-top:60px;">
+            <div class="row g-4 set-height-in-items-container">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 whole-item-container-div">
+                    <div class="heading">
+                        <h1 class="item-name indent-text">Apple Iphone X</h1>
+                    </div>
+                    <!--
+                    <div class="item-image">
+                        <svg id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512"
+                            width="512" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <path
+                                    d="m128.961 0 16.707 189.99-16.707 191.8h-1.73c-30.44 0-55.12 24.68-55.12 55.11v-400.84c0-19.92 16.15-36.06 36.06-36.06z"
+                                    fill="#db3915" />
+                                <path
+                                    d="m432.001 413.162v67.469h-311.58c-12.834 0-23.247-10.412-23.247-23.247v-20.976c0-12.834 10.412-23.247 23.247-23.247h311.58z"
+                                    fill="#d9ecfd" />
+                                <path d="m432.001 446.897v33.735h-311.58c-12.834 0-23.247-10.412-23.247-23.247v-10.488z"
+                                    fill="#c5e2ff" />
+                                <path
+                                    d="m432.677 0h-303.718v381.79h-1.731c-30.439 0-55.115 24.676-55.115 55.115v19.981c0 30.439 24.676 55.115 55.115 55.115h305.449c3.983 0 7.211-3.229 7.211-7.211v-18.543c0-3.983-3.229-7.211-7.211-7.211h-305.448c-12.232 0-22.149-9.916-22.149-22.149v-19.981c0-12.233 9.917-22.149 22.149-22.149h305.449c3.983 0 7.211-3.229 7.211-7.211v-25.756-374.579c0-3.982-3.229-7.211-7.212-7.211z"
+                                    fill="#fc5a36" />
+                                <path
+                                    d="m127.229 381.789c-30.439 0-55.115 24.676-55.115 55.115v19.981c0 30.439 24.676 55.115 55.115 55.115h305.449c3.983 0 7.211-3.229 7.211-7.211v-18.543c0-3.983-3.229-7.211-7.211-7.211h-305.449c-12.232 0-22.149-9.916-22.149-22.149v-19.981c0-12.233 9.916-22.149 22.149-22.149h305.449c3.983 0 7.211-3.229 7.211-7.211v-25.755h-312.66z"
+                                    fill="#a42b0f" />
+                                <path
+                                    d="m370.407 140.439h-171.826c-3.866 0-7-3.134-7-7v-69.157c0-3.866 3.134-7 7-7h171.826c3.866 0 7 3.134 7 7v69.156c0 3.867-3.134 7.001-7 7.001z"
+                                    fill="#ffc85e" />
+                                <g>
+                                    <g>
+                                        <path
+                                            d="m344.245 256.61h-119.501c-4.268 0-7.726-3.459-7.726-7.726s3.459-7.726 7.726-7.726h119.501c4.268 0 7.726 3.459 7.726 7.726s-3.459 7.726-7.726 7.726z"
+                                            fill="#d9ecfd" />
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path
+                                            d="m344.245 293.508h-119.501c-4.268 0-7.726-3.459-7.726-7.726s3.459-7.726 7.726-7.726h119.501c4.268 0 7.726 3.459 7.726 7.726s-3.459 7.726-7.726 7.726z"
+                                            fill="#d9ecfd" />
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                -->
+                    <div class="item-more-information indent-text">
+                        <h3 class="item-box-label">More info:</h3>
+                        <div class="item-more-information-list">
+                            <ul>
+                                <li>64 GB Ram</li>
+                                <li>128 GB Storage</li>
+                                <li>64 GB Ram</li>
+                            </ul>
+                        </div>
+                        <button class="buy-item-now-button">Buy Now</button>
+                    </div>
+                    <div class="item-more-information indent-text">
+                        <h4 class="item-box-label">From: <a class="item-owner-id">354ga3514eav5w4386a4</a></h4>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 whole-item-container-div">
+                    <div class="heading">
+                        <h1 class="item-name indent-text">Apple Iphone X</h1>
+                    </div>
+                    <div class="item-more-information indent-text">
+                        <h3 class="item-box-label">More info:</h3>
+                        <div class="item-more-information-list">
+                            <ul>
+                                <li>64 GB Ram</li>
+                                <li>128 GB Storage</li>
+                                <li>64 GB Ram</li>
+                            </ul>
+                        </div>
+                        <button class="buy-item-now-button">Buy Now</button>
+                    </div>
+                    <div class="item-more-information indent-text">
+                        <h4 class="item-box-label">From: <a class="item-owner-id">354ga3514eav5w4386a4</a></h4>
+                    </div>
+                </div>
+                
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 whole-item-container-div">
+                    <div class="heading">
+                        <h1 class="item-name indent-text">Apple Iphone X</h1>
+                    </div>
+                    <!--
+                    <div class="item-image">
+                        <svg id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512"
+                            width="512" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <path
+                                    d="m128.961 0 16.707 189.99-16.707 191.8h-1.73c-30.44 0-55.12 24.68-55.12 55.11v-400.84c0-19.92 16.15-36.06 36.06-36.06z"
+                                    fill="#db3915" />
+                                <path
+                                    d="m432.001 413.162v67.469h-311.58c-12.834 0-23.247-10.412-23.247-23.247v-20.976c0-12.834 10.412-23.247 23.247-23.247h311.58z"
+                                    fill="#d9ecfd" />
+                                <path d="m432.001 446.897v33.735h-311.58c-12.834 0-23.247-10.412-23.247-23.247v-10.488z"
+                                    fill="#c5e2ff" />
+                                <path
+                                    d="m432.677 0h-303.718v381.79h-1.731c-30.439 0-55.115 24.676-55.115 55.115v19.981c0 30.439 24.676 55.115 55.115 55.115h305.449c3.983 0 7.211-3.229 7.211-7.211v-18.543c0-3.983-3.229-7.211-7.211-7.211h-305.448c-12.232 0-22.149-9.916-22.149-22.149v-19.981c0-12.233 9.917-22.149 22.149-22.149h305.449c3.983 0 7.211-3.229 7.211-7.211v-25.756-374.579c0-3.982-3.229-7.211-7.212-7.211z"
+                                    fill="#fc5a36" />
+                                <path
+                                    d="m127.229 381.789c-30.439 0-55.115 24.676-55.115 55.115v19.981c0 30.439 24.676 55.115 55.115 55.115h305.449c3.983 0 7.211-3.229 7.211-7.211v-18.543c0-3.983-3.229-7.211-7.211-7.211h-305.449c-12.232 0-22.149-9.916-22.149-22.149v-19.981c0-12.233 9.916-22.149 22.149-22.149h305.449c3.983 0 7.211-3.229 7.211-7.211v-25.755h-312.66z"
+                                    fill="#a42b0f" />
+                                <path
+                                    d="m370.407 140.439h-171.826c-3.866 0-7-3.134-7-7v-69.157c0-3.866 3.134-7 7-7h171.826c3.866 0 7 3.134 7 7v69.156c0 3.867-3.134 7.001-7 7.001z"
+                                    fill="#ffc85e" />
+                                <g>
+                                    <g>
+                                        <path
+                                            d="m344.245 256.61h-119.501c-4.268 0-7.726-3.459-7.726-7.726s3.459-7.726 7.726-7.726h119.501c4.268 0 7.726 3.459 7.726 7.726s-3.459 7.726-7.726 7.726z"
+                                            fill="#d9ecfd" />
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path
+                                            d="m344.245 293.508h-119.501c-4.268 0-7.726-3.459-7.726-7.726s3.459-7.726 7.726-7.726h119.501c4.268 0 7.726 3.459 7.726 7.726s-3.459 7.726-7.726 7.726z"
+                                            fill="#d9ecfd" />
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                -->
+                    <div class="item-more-information indent-text">
+                        <h3 class="item-box-label">More info:</h3>
+                        <div class="item-more-information-list">
+                            <ul>
+                                <li>64 GB Ram</li>
+                                <li>128 GB Storage</li>
+                                <li>64 GB Ram</li>
+                            </ul>
+                        </div>
+                        <button class="buy-item-now-button">Buy Now</button>
+                    </div>
+                    <div class="item-more-information indent-text">
+                        <h4 class="item-box-label">From: <a class="item-owner-id">354ga3514eav5w4386a4</a></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
