@@ -32,14 +32,16 @@ class Main extends Component {
                 </div>
                 <p>&nbsp;</p>
                 <div className="container-fluid">
-                  <Jumbotron className="text-center" style={{ maxWidth: '60%' }}>
+                  <Jumbotron className="text-center" style={{ maxWidth: '80%' }}>
                   
                     <h1 style={{ textAlign: "center" }}>Add Product</h1>
                     <form onSubmit={(event) => {
                       event.preventDefault()
                       const name = this.productName.value
+                      const info = this.productInfo.value
+                      const author = this.productAuthor.value
                       const price = window.web3.utils.toWei(this.productPrice.value.toString(), 'Ether')
-                      this.props.createProduct(name, price)
+                      this.props.createProduct(name, info, author, price)
                     }}>
                       <div className="form-group mr-sm-2">
                         <input
@@ -48,6 +50,24 @@ class Main extends Component {
                           ref={(input) => { this.productName = input }}
                           className="form-control"
                           placeholder="Product Name"
+                          required />
+                      </div>
+                      <div className="form-group mr-sm-2">
+                        <input
+                          id="productInfo"
+                          type="text"
+                          ref={(input) => { this.productInfo = input }}
+                          className="form-control"
+                          placeholder="Product Info"
+                          required />
+                      </div>
+                      <div className="form-group mr-sm-2">
+                        <input
+                          id="productAuthor"
+                          type="text"
+                          ref={(input) => { this.productAuthor = input }}
+                          className="form-control"
+                          placeholder="Product Author"
                           required />
                       </div>
                       <div className="form-group mr-sm-2">
@@ -67,7 +87,7 @@ class Main extends Component {
                 
                   <p>&nbsp;</p>
                 <div className="container-fluid">
-                  <Jumbotron className="text-center" style={{ maxWidth: '60%' }}>
+                  <Jumbotron className="text-center" style={{ maxWidth: '80%' }}>
                   
                     <h1 style={{ textAlign: "center" }}>Search Products</h1>
                     <form onSubmit={(event) => {
@@ -99,6 +119,8 @@ class Main extends Component {
                         <tr>
                           <th scope="col">#</th>
                           <th scope="col">Name</th>
+                          <th scope="col">Info</th>
+                          <th scope="col">Author</th>
                           <th scope="col">Price</th>
                           <th scope="col">Owner</th>
                           <th scope="col">Status</th>
@@ -108,8 +130,10 @@ class Main extends Component {
                         {this.props.products.map((product, key) => {
                           return (
                             <tr key={key}>
-                              <th scope="row">{(!product.purchased && (product.name.includes(srch)))? product.id.toString() : null}</th>
+                              <th scope="row">{(!product.purchased && ((product.name.toLowerCase()).includes(srch)))? product.id.toString() : null}</th>
                               <td>{(!product.purchased && ((product.name.toLowerCase()).includes(srch)))? product.name : null}</td>
+                              <td>{(!product.purchased && ((product.name.toLowerCase()).includes(srch)))? product.info : null}</td>
+                              <td>{(!product.purchased && ((product.name.toLowerCase()).includes(srch)))? product.author : null}</td>
                               <td>{(!product.purchased && ((product.name.toLowerCase()).includes(srch)))? window.web3.utils.fromWei(product.price.toString(), 'Ether') : null}</td>
                               <td>{(!product.purchased && ((product.name.toLowerCase()).includes(srch)))? product.owner : null}</td>
                               <td>
@@ -137,13 +161,15 @@ class Main extends Component {
 
                 <p>&nbsp;</p>
                 <div className="container-fluid">
-                  <Jumbotron className="text-center" style={{ maxWidth: '60%' }}>
+                  <Jumbotron className="text-center" style={{ maxWidth: '80%' }}>
                     <h2>Products up for sale</h2>
                     <table className="table">
                       <thead>
                         <tr>
                           <th scope="col">#</th>
                           <th scope="col">Name</th>
+                          <th scope="col">Info</th>
+                          <th scope="col">Author</th>
                           <th scope="col">Price</th>
                           <th scope="col">Owner</th>
                           <th scope="col">Status</th>
@@ -155,6 +181,8 @@ class Main extends Component {
                             <tr key={key}>
                               <th scope="row">{!product.purchased ? product.id.toString() : null}</th>
                               <td>{!product.purchased ? product.name : null}</td>
+                              <td>{!product.purchased ? product.info : null}</td>
+                              <td>{!product.purchased ? product.author : null}</td>
                               <td>{!product.purchased ? window.web3.utils.fromWei(product.price.toString(), 'Ether') : null}</td>
                               <td>{!product.purchased ? product.owner : null}</td>
                               <td>
@@ -182,13 +210,15 @@ class Main extends Component {
 
                 <p>&nbsp;</p>
                 <div className="container-fluid">
-                  <Jumbotron className="text-center" style={{ maxWidth: '60%' }}>
+                  <Jumbotron className="text-center" style={{ maxWidth: '80%' }}>
                     <h2>Product History</h2>
                     <table className="table">
                       <thead>
                         <tr>
                           <th scope="col">#</th>
                           <th scope="col">Name</th>
+                          <th scope="col">Info</th>
+                          <th scope="col">Author</th>
                           <th scope="col">Price</th>
                           <th scope="col">Owner</th>
                           <th scope="col">Status</th>
@@ -201,6 +231,8 @@ class Main extends Component {
                             <tr key={key}>
                               <th scope="row">{product.id.toString()}</th>
                               <td>{product.name}</td>
+                              <td>{product.info}</td>
+                              <td>{product.author}</td>
                               <td>{window.web3.utils.fromWei(product.price.toString(), 'Ether')} Eth</td>
                               <td>{product.owner}</td>
                               <td>

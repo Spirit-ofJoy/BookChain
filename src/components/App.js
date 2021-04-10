@@ -96,9 +96,9 @@ class App extends Component {
   }
 
 
-  createProduct(name, price) {
+  createProduct(name, info, author, price) {
     this.setState({ loading: true })
-    this.state.marketplace.methods.createProduct(name, price).send({ from: this.state.account })
+    this.state.marketplace.methods.createProduct(name, info, author, price).send({ from: this.state.account })
     .once('receipt', (receipt) => {
       this.setState({ loading: false })
     })
