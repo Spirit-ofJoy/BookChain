@@ -4,7 +4,7 @@ require('chai')
   .use(require('chai-as-promised'))
   .should()
 
-contract('Marketplace', ([deployer, seller, buyer, author, tipper]) => {
+contract('Marketplace', ([deployer, seller, buyer, author]) => {
   let marketplace
 
   before(async () => {
@@ -130,38 +130,6 @@ contract('Marketplace', ([deployer, seller, buyer, author, tipper]) => {
       assert.equal(post.content, 'This is my first post', 'content is correct')
       assert.equal(post.tipAmount, '0', 'tip amount is correct')
       assert.equal(post.author, author, 'author is correct')
-    })
-
-    it('allows users to tip posts', async () => {
-      // Track the author balance before purchase
-      let oldAuthorBalance
-      oldAuthorBalance = await web3.eth.getBalance(author)
-      oldAuthorBalance = new web3.utils.BN(oldAuthorBalance)
-
-      result = await marketplace.tipPost(postCount, { from: tipper, value: web3.utils.toWei('1', 'Ether') })
-
-      // SUCESS
-      const event = result.logs[0].args
-      assert.equal(event.id.toNumber(), postCount.toNumber(), 'id is correct')
-      assert.equal(event.content, 'This is my first post', 'content is correct')
-      assert.equal(event.tipAmount, '1000000000000000000', 'tip amount is correct')
-      assert.equal(event.author, author, 'author is correct')
-
-      // Check that author received funds
-      let newAuthorBalance
-      newAuthorBalance = await web3.eth.getBalance(author)
-      newAuthorBalance = new web3.utils.BN(newAuthorBalance)
-
-      let tipAmount
-      tipAmount = web3.utils.toWei('1', 'Ether')
-      tipAmount = new web3.utils.BN(tipAmount)
-
-      const exepectedBalance = oldAuthorBalance.add(tipAmount)
-
-      assert.equal(newAuthorBalance.toString(), exepectedBalance.toString())
-
-      // FAILURE: Tries to tip a post that does not exist
-      await marketplace.tipPost(99, { from: tipper, value: web3.utils.toWei('1', 'Ether')}).should.be.rejected;
     })
 
   })

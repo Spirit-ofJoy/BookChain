@@ -1,0 +1,43 @@
+:root {
+  --login-signup-page-background-color: #162547;
+  --scrollbar-color-on-about-page: rgba(255, 255, 255, 0.472);
+}
+
+/*This is the box thhat contains all the information for the app*/
+.info-for-the-app {
+  height: 80%;
+  width: 80%;
+  overflow-y: auto;
+  overflow-x: none;
+  color: white;
+}
+
+/*Scroll bar css*/
+.info-for-the-app::-webkit-scrollbar {
+  width: 20px;
+  border-width: 5px;
+}
+
+.info-for-the-app::-webkit-scrollbar-track-piece {
+  background-color: var(--scrollbar-color-on-about-page);
+  border-color: var(--login-signup-page-background-color);
+  border-width: 2px 9px 2px 9px;
+  border-style: solid;
+}
+
+.info-for-the-app::-webkit-scrollbar-thumb {
+  border-radius: 7px;
+  background-color: var(--scrollbar-color-on-about-page);
+  border-color: var(--login-signup-page-background-color);
+  border-style: solid;
+  border-width: 1px 7px 1px 7px;
+}
+
+.info-for-the-app > h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 0.2rem;
+}

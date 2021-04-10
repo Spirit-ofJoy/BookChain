@@ -83,7 +83,6 @@ class App extends Component {
       loading: true
     }
     this.createPost = this.createPost.bind(this)
-    this.tipPost = this.tipPost.bind(this)
     this.createProduct = this.createProduct.bind(this)
     this.purchaseProduct = this.purchaseProduct.bind(this)
   }
@@ -96,13 +95,6 @@ class App extends Component {
     })
   }
 
-  tipPost(id, tipAmount) {
-    this.setState({ loading: true })
-    this.state.marketplace.methods.tipPost(id).send({ from: this.state.account, value: tipAmount })
-    .once('receipt', (receipt) => {
-      this.setState({ loading: false })
-    })
-  }
 
   createProduct(name, price) {
     this.setState({ loading: true })
