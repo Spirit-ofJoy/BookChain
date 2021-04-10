@@ -18,6 +18,7 @@ class Network extends Component {
                 <form onSubmit={(event) => {
                   event.preventDefault()
                   const content = this.postContent.value
+                  console.log(this.props.posts.writer)
                   this.props.createPost(content)
                 }}>
                 <div className="form-group mr-sm-2">
@@ -40,8 +41,13 @@ class Network extends Component {
                 return(
                   <div className="card mb-4" key={key} >
                     <div className="card-header">
-
-                      <small className="text-muted">{post.author}</small>
+                      {/* <img
+                        className='mr-2'
+                        width='30'
+                        height='30'
+                        src={`data:image/png;base64,${new Identicon(post.author, 30).toString()}`}
+                      /> */}
+                      <small className="text-muted">{post.writer}</small>
                     </div>
                     <ul id="postList" className="list-group list-group-flush">
                       <li className="list-group-item">
