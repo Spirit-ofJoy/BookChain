@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Container, Jumbotron } from "react-bootstrap";
-import Loading from "../Loading";
 import Blog from "./blog";
 
 class BlogList extends Component {
@@ -33,7 +32,6 @@ class BlogList extends Component {
   render() {
     return (
     <>
-    <Loading time={2} />
     <div className="container-fluid mt-5">
         <div className="row">
           <main role="main" className="col-lg-12 ml-auto mr-auto">
@@ -53,10 +51,10 @@ class BlogList extends Component {
                 <div class="form-group">
                 <label for="postHeading"></label>
                   <select id="postHeading" className="form-control"  ref={(input) => { this.postHeading = input }} required >
-                    <option>others</option>
-                    <option>added</option>
-                    <option>request</option>
-                    <option>notice</option>
+                    <option>Others</option>
+                    <option>Added</option>
+                    <option>Request</option>
+                    <option>Notice</option>
                   </select>
                   {/* <input
                     id="postHeading"

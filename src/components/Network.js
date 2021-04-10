@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 import { Container, Jumbotron } from "react-bootstrap";
-import Loading from "./Loading";
 
 class Network extends Component {
 
   render() {
     return (
       <>
-      <Loading time={2} />
       <div className="container-fluid mt-5">
         <div className="row">
           <main role="main" className="col-lg-12 ml-auto mr-auto">

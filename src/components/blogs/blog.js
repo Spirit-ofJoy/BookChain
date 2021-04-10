@@ -15,19 +15,19 @@ class Blog extends Component {
    * @returns A JSX with heading and appropriate icon styled with classes with it
    */
   changeHeading(heading) {
-    if (heading === "added") {
+    if (heading === "Added") {
       return (
         <h1 className="blog-heading">
           Added <i className="ri-check-double-line blog-heading-added"></i>{" "}
         </h1>
       );
-    } else if (heading === "notice") {
+    } else if (heading === "Notice") {
       return (
         <h1 className="blog-heading">
           Notice <i className="ri-file-paper-2-line blog-heading-notice"></i>{" "}
         </h1>
       );
-    } else if (heading === "request" || heading === "requesting") {
+    } else if (heading === "Request" || heading === "requesting") {
       return (
         <h1 className="blog-heading">
           Request <i className="ri-add-fill blog-heading-request"></i>{" "}
