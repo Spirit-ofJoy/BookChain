@@ -43,6 +43,7 @@ contract('Marketplace', ([deployer, seller, buyer, author, tipper]) => {
       assert.equal(event.price, '1000000000000000000', 'price is correct')
       assert.equal(event.owner, seller, 'owner is correct')
       assert.equal(event.purchased, false, 'purchased is correct')
+      assert.equal(event.seller, seller, 'seller is correct')
 
       // FAILURE: Product must have a name
       await await marketplace.createProduct('', web3.utils.toWei('1', 'Ether'), { from: seller }).should.be.rejected;
@@ -57,6 +58,7 @@ contract('Marketplace', ([deployer, seller, buyer, author, tipper]) => {
       assert.equal(product.price, '1000000000000000000', 'price is correct')
       assert.equal(product.owner, seller, 'owner is correct')
       assert.equal(product.purchased, false, 'purchased is correct')
+      assert.equal(product.seller, seller, 'seller is correct')
     })
 
     it('sells products', async () => {
@@ -75,6 +77,7 @@ contract('Marketplace', ([deployer, seller, buyer, author, tipper]) => {
       assert.equal(event.price, '1000000000000000000', 'price is correct')
       assert.equal(event.owner, buyer, 'owner is correct')
       assert.equal(event.purchased, true, 'purchased is correct')
+      assert.equal(event.seller, seller, 'purchased is correct')
 
       // Check that seller received funds
       let newSellerBalance

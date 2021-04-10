@@ -20,6 +20,7 @@ contract Marketplace {
         uint price;
         address payable owner;
         bool purchased;
+        address seller;
     }
 
     event PostCreated(
@@ -42,7 +43,8 @@ contract Marketplace {
         string name,
         uint price,
         address payable owner,
-        bool purchased
+        bool purchased,
+        address seller
     );
 
     event ProductPurchased(
@@ -50,7 +52,8 @@ contract Marketplace {
         string name,
         uint price,
         address payable owner,
-        bool purchased
+        bool purchased,
+        address seller
     );
 
     constructor() public {
@@ -93,9 +96,9 @@ contract Marketplace {
         // Increment product count
         productCount ++;
         // Create the product
-        products[productCount] = Product(productCount, _name, _price, msg.sender, false);
+        products[productCount] = Product(productCount, _name, _price, msg.sender, false, msg.sender);
         // Trigger an event
-        emit ProductCreated(productCount, _name, _price, msg.sender, false);
+        emit ProductCreated(productCount, _name, _price, msg.sender, false, msg.sender);
     }
 
     function purchaseProduct(uint _id) public payable {
@@ -103,6 +106,8 @@ contract Marketplace {
         Product memory _product = products[_id];
         // Fetch the owner
         address payable _seller = _product.owner;
+        // Fetch original owner
+        address og_owner = _product.seller;
         // Make sure the product has a valid id
         require(_product.id > 0 && _product.id <= productCount);
         // Require that there is enough Ether in the transaction
@@ -120,6 +125,6 @@ contract Marketplace {
         // Pay the seller by sending them Ether
         address(_seller).transfer(msg.value);
         // Trigger an event
-        emit ProductPurchased(productCount, _product.name, _product.price, msg.sender, true);
+        emit ProductPurchased(productCount, _product.name, _product.price, msg.sender, true, og_owner);
     }
 }

@@ -70,6 +70,36 @@ class Dashboard extends Component {
           </tbody>
         </table>
         </Jumbotron></div>
+        <p>&nbsp;</p>
+        <div className="container-fluid">
+      <Jumbotron className="text-center" style={{ maxWidth: '60%' }}>
+        <h2>Already Sold Items</h2>
+        <table className="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Price</th>
+              <th scope="col">Owner</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody id="productList">
+            { this.props.products.map((product, key) => {
+              return(
+                <tr key={key}>
+                  <th scope="row">{ (product.seller === this.props.account && product.purchased) ?product.id.toString(): null}</th>
+                  <td>{ (product.seller === this.props.account && product.purchased) ?product.name: null}</td>
+                  <td>{ (product.seller === this.props.account && product.purchased) ?window.web3.utils.fromWei(product.price.toString(), 'Ether'): null}</td>
+                  <td>{ (product.seller === this.props.account && product.purchased) ?product.owner: null}</td>
+                  
+                  </tr>
+              )
+            })}
+          </tbody>
+        </table>
+        </Jumbotron></div>
+        
       </div>
       </main>
       </div></div>
