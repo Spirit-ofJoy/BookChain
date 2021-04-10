@@ -30,8 +30,32 @@ h1.blog-heading {
 }
 
 .blog-heading > i {
+  animation: the-icon-animation-blog 5s cubic-bezier(.47,1.11,.22,1)
+    infinite;
   vertical-align: middle;
   font-size: 2.4rem;
+}
+
+/*--------------------------------
+Blog Post Heading Icon Animation key frames
+--------------------------------*/
+
+@keyframes the-icon-animation-blog {
+  0% {
+    padding-left: 10px;
+  }
+
+  10% {
+    padding-left: 0px;
+  }
+
+  90% {
+    padding-left: 0px;
+  }
+
+  100% {
+    padding-left: 10px;
+  }
 }
 
 .blog-heading > .blog-heading-added {
