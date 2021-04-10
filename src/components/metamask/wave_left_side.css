@@ -1,0 +1,220 @@
+#app-name-login-page,
+#some-insipiring-quote-login-page {
+  color: white;
+  display: none;
+}
+
+/*Root elements*/
+:root {
+  --poll-box-enclosing-width: 25%;
+  --poll-box-margin-top-bottom: 17%;
+  --animation-root-length: 3s; /*Polls only*/
+  --curve-height: 100%;
+  --right-side-width: 45%;
+  --right-side-box-color: rgb(0, 124, 255);
+  --wave-section-width: 15%;
+  --login-signup-page-background-color:#162547;
+}
+
+/*Setting up size for the content of the whole pages*/
+#login-sign-up-page-content {
+  position: absolute;
+  /*position: fixed;*/
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: var(--login-signup-page-background-color);
+}
+
+/*----------------------------
+      Animated Poll Box
+----------------------------*/
+.poll-animated-icon-and-name {
+  display: grid;
+  place-items: center;
+}
+
+.animated-poll-box {
+  width: 200px;
+  height: 200px;
+}
+
+.login-sign-up-page-animated-box {
+  width: 100%;
+  height: 100%;
+  background-color: aliceblue;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 0 25px 0 rgb(184, 184, 184);
+}
+
+.login-sign-up-page-individual-polls-section {
+  width: var(--poll-box-enclosing-width);
+  max-height: 100%;
+  margin-bottom: var(--poll-box-margin-top-bottom);
+  margin-top: var(--poll-box-margin-top-bottom);
+  position: relative;
+}
+
+.login-sign-up-page-poll-bar {
+  border-radius: 30px;
+  margin: auto;
+  width: 40%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  /*animation*/
+  animation: move-forever 14s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite,
+    color-change 3s infinite;
+}
+
+/*Poll animation Move-Forever is self explained Color change changes the colors of the bars*/
+@keyframes move-forever {
+  0% {
+    height: 40%;
+  }
+
+  50% {
+    height: 100%;
+  }
+
+  100% {
+    height: 40%;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    background-color: rgb(0, 255, 221);
+  }
+
+  33% {
+    background-color: rgb(0, 110, 255);
+  }
+
+  66% {
+    background-color: rgb(146, 127, 255);
+  }
+
+  100% {
+    background-color: rgb(0, 255, 221);
+  }
+}
+
+#poll-1 {
+  animation-delay: -2s;
+  animation-duration: var(--animation-root-length);
+}
+
+#poll-2 {
+  animation-delay: -3s;
+  animation-duration: calc(1.5 * var(--animation-root-length));
+}
+
+#poll-3 {
+  animation-delay: -5s;
+  animation-duration: calc(2.75 * var(--animation-root-length));
+}
+
+#login-sign-up-page-right-side-box {
+  width: var(--right-side-width);
+  height: 100%;
+  background-color: var(--right-side-box-color);
+  display: grid;
+  place-items: center;
+}
+
+#complete-waves-section {
+  position: fixed;
+  margin-left: var(--right-side-width);
+  height: 100%;
+  width: var(--wave-section-width);
+}
+
+.wave-margin-boxes {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.wave-svg {
+  fill: aqua;
+}
+
+.login-waves {
+  height: 100%;
+  width: 100%;
+}
+
+/* Setting up opacity and colors of the waves*/ 
+.login-parallax > use {
+  fill: var(--right-side-box-color);
+}
+
+.login-parallax > use:nth-child(1) {
+  opacity: 0.7;
+}
+
+.login-parallax > use:nth-child(2) {
+  opacity: 0.5;
+}
+
+.login-parallax > use:nth-child(3) {
+  opacity: 0.3;
+}
+
+.login-parallax > use:nth-child(4) {
+  opacity: 1;
+}
+
+/* Setting up Animation of waves*/
+.login-parallax > use {
+  animation: waves 10s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+.login-parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+
+.login-parallax > use:nth-child(2) {
+  animation-delay: -3s;
+}
+
+.login-parallax > use:nth-child(3) {
+  animation-delay: -4s;
+}
+
+.login-parallax > use:nth-child(4) {
+  animation-delay: -5s;
+}
+
+/*Keyframe animation of sea shore waves*/
+@keyframes waves {
+  0% {
+    transform: translate3d(0, 9px, 0);
+  }
+
+  50% {
+    transform: translate3d(0, -8px, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 9px, 0);
+  }
+}
+
+/*Setting up the size left on the left side of the login page */
+#login-signup-left-section {
+  position: absolute;
+  right: 0;
+  width: calc(100% - var(--right-side-width) - var(--wave-section-width));
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
