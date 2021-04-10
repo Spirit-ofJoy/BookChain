@@ -563,7 +563,576 @@ class Stars extends Component {
     >
       <i class="ri-star-s-line"></i>
     </div>
+  ),(
+    <div
+      style={{
+        top: this.randompercent(),
+        right: this.randompercent(),
+        position: "absolute",
+        opacity:Math.random()
+      }}
+    >
+      <i class="ri-star-s-line"></i>
+    </div>
+  ),(
+    <div
+      style={{
+        top: this.randompercent(),
+        right: this.randompercent(),
+        position: "absolute",
+        opacity:Math.random()
+      }}
+    >
+      <i class="ri-star-s-line"></i>
+    </div>
+  ),(
+    <div
+      style={{
+        top: this.randompercent(),
+        right: this.randompercent(),
+        position: "absolute",
+        opacity:Math.random()
+      }}
+    >
+      <i class="ri-star-s-line"></i>
+    </div>
+  ),(
+    <div
+      style={{
+        top: this.randompercent(),
+        right: this.randompercent(),
+        position: "absolute",
+        opacity:Math.random()
+      }}
+    >
+      <i class="ri-star-s-line"></i>
+    </div>
+  ),(
+    <div
+      style={{
+        top: this.randompercent(),
+        right: this.randompercent(),
+        position: "absolute",
+        opacity:Math.random()
+      }}
+    >
+      <i class="ri-star-s-line"></i>
+    </div>
+  ),(
+    <div
+      style={{
+        top: this.randompercent(),
+        right: this.randompercent(),
+        position: "absolute",
+        opacity:Math.random()
+      }}
+    >
+      <i class="ri-star-s-line"></i>
+    </div>
+  ),(
+    <div
+      style={{
+        top: this.randompercent(),
+        right: this.randompercent(),
+        position: "absolute",
+        opacity:Math.random()
+      }}
+    >
+      <i class="ri-star-s-line"></i>
+    </div>
+  ),(
+    <div
+      style={{
+        top: this.randompercent(),
+        right: this.randompercent(),
+        position: "absolute",
+        opacity:Math.random()
+      }}
+    >
+      <i class="ri-star-s-line"></i>
+    </div>
+  ),(
+    <div
+      style={{
+        top: this.randompercent(),
+        right: this.randompercent(),
+        position: "absolute",
+        opacity:Math.random()
+      }}
+    >
+      <i class="ri-star-s-line"></i>
+    </div>
+  ),(
+    <div
+      style={{
+        top: this.randompercent(),
+        right: this.randompercent(),
+        position: "absolute",
+        opacity:Math.random()
+      }}
+    >
+      <i class="ri-star-s-line"></i>
+    </div>
+  ),(
+    <div
+      style={{
+        top: this.randompercent(),
+        right: this.randompercent(),
+        position: "absolute",
+        opacity:Math.random()
+      }}
+    >
+      <i class="ri-star-s-line"></i>
+    </div>
+  ),(
+    <div
+      style={{
+        top: this.randompercent(),
+        right: this.randompercent(),
+        position: "absolute",
+        opacity:Math.random()
+      }}
+    >
+      <i class="ri-star-s-line"></i>
+    </div>
+  ),(
+    <div
+      style={{
+        top: this.randompercent(),
+        right: this.randompercent(),
+        position: "absolute",
+        opacity:Math.random()
+      }}
+    >
+      <i class="ri-star-s-line"></i>
+    </div>
+  ),(
+    <div
+      style={{
+        top: this.randompercent(),
+        right: this.randompercent(),
+        position: "absolute",
+        opacity:Math.random()
+      }}
+    >
+      <i class="ri-star-s-line"></i>
+    </div>
+  ),(
+    <div
+      style={{
+        top: this.randompercent(),
+        right: this.randompercent(),
+        position: "absolute",
+        opacity:Math.random()
+      }}
+    >
+      <i class="ri-star-s-line"></i>
+    </div>
+  ),(
+    <div
+      style={{
+        top: this.randompercent(),
+        right: this.randompercent(),
+        position: "absolute",
+        opacity:Math.random()
+      }}
+    >
+      <i class="ri-star-s-line"></i>
+    </div>
+  ),(
+    <div
+      style={{
+        top: this.randompercent(),
+        right: this.randompercent(),
+        position: "absolute",
+        opacity:Math.random()
+      }}
+    >
+      <i class="ri-star-s-line"></i>
+    </div>
+  ),(
+    <div
+      style={{
+        top: this.randompercent(),
+        right: this.randompercent(),
+        position: "absolute",
+        opacity:Math.random()
+      }}
+    >
+      <i class="ri-star-s-line"></i>
+    </div>
+  ),(
+    <div
+      style={{
+        top: this.randompercent(),
+        right: this.randompercent(),
+        position: "absolute",
+        opacity:Math.random()
+      }}
+    >
+      <i class="ri-star-s-line"></i>
+    </div>
   ),(<div
+    style={{
+      top: this.randompercent(),
+      right: this.randompercent(),
+      position: "absolute",
+      opacity:Math.random()
+    }}
+  >
+    <i class="ri-star-s-fill"></i>
+  </div>),(<div
+    style={{
+      top: this.randompercent(),
+      right: this.randompercent(),
+      position: "absolute",
+      opacity:Math.random()
+    }}
+  >
+    <i class="ri-star-s-fill"></i>
+  </div>),(<div
+    style={{
+      top: this.randompercent(),
+      right: this.randompercent(),
+      position: "absolute",
+      opacity:Math.random()
+    }}
+  >
+    <i class="ri-star-s-fill"></i>
+  </div>),(<div
+    style={{
+      top: this.randompercent(),
+      right: this.randompercent(),
+      position: "absolute",
+      opacity:Math.random()
+    }}
+  >
+    <i class="ri-star-s-fill"></i>
+  </div>),(<div
+    style={{
+      top: this.randompercent(),
+      right: this.randompercent(),
+      position: "absolute",
+      opacity:Math.random()
+    }}
+  >
+    <i class="ri-star-s-fill"></i>
+  </div>),(<div
+    style={{
+      top: this.randompercent(),
+      right: this.randompercent(),
+      position: "absolute",
+      opacity:Math.random()
+    }}
+  >
+    <i class="ri-star-s-fill"></i>
+  </div>),(<div
+    style={{
+      top: this.randompercent(),
+      right: this.randompercent(),
+      position: "absolute",
+      opacity:Math.random()
+    }}
+  >
+    <i class="ri-star-s-fill"></i>
+  </div>),(<div
+    style={{
+      top: this.randompercent(),
+      right: this.randompercent(),
+      position: "absolute",
+      opacity:Math.random()
+    }}
+  >
+    <i class="ri-star-s-fill"></i>
+  </div>),(<div
+    style={{
+      top: this.randompercent(),
+      right: this.randompercent(),
+      position: "absolute",
+      opacity:Math.random()
+    }}
+  >
+    <i class="ri-star-s-fill"></i>
+  </div>),(<div
+    style={{
+      top: this.randompercent(),
+      right: this.randompercent(),
+      position: "absolute",
+      opacity:Math.random()
+    }}
+  >
+    <i class="ri-star-s-fill"></i>
+  </div>),(<div
+    style={{
+      top: this.randompercent(),
+      right: this.randompercent(),
+      position: "absolute",
+      opacity:Math.random()
+    }}
+  >
+    <i class="ri-star-s-fill"></i>
+  </div>),(<div
+    style={{
+      top: this.randompercent(),
+      right: this.randompercent(),
+      position: "absolute",
+      opacity:Math.random()
+    }}
+  >
+    <i class="ri-star-s-fill"></i>
+  </div>),(<div
+    style={{
+      top: this.randompercent(),
+      right: this.randompercent(),
+      position: "absolute",
+      opacity:Math.random()
+    }}
+  >
+    <i class="ri-star-s-fill"></i>
+  </div>),(<div
+    style={{
+      top: this.randompercent(),
+      right: this.randompercent(),
+      position: "absolute",
+      opacity:Math.random()
+    }}
+  >
+    <i class="ri-star-s-fill"></i>
+  </div>),(<div
+    style={{
+      top: this.randompercent(),
+      right: this.randompercent(),
+      position: "absolute",
+      opacity:Math.random()
+    }}
+  >
+    <i class="ri-star-s-fill"></i>
+  </div>),(<div
+    style={{
+      top: this.randompercent(),
+      right: this.randompercent(),
+      position: "absolute",
+      opacity:Math.random()
+    }}
+  >
+    <i class="ri-star-s-fill"></i>
+  </div>),(<div
+    style={{
+      top: this.randompercent(),
+      right: this.randompercent(),
+      position: "absolute",
+      opacity:Math.random()
+    }}
+  >
+    <i class="ri-star-s-fill"></i>
+  </div>),(<div
+    style={{
+      top: this.randompercent(),
+      right: this.randompercent(),
+      position: "absolute",
+      opacity:Math.random()
+    }}
+  >
+    <i class="ri-star-s-fill"></i>
+  </div>),(<div
+    style={{
+      top: this.randompercent(),
+      right: this.randompercent(),
+      position: "absolute",
+      opacity:Math.random()
+    }}
+  >
+    <i class="ri-star-s-fill"></i>
+  </div>),(<div
+    style={{
+      top: this.randompercent(),
+      right: this.randompercent(),
+      position: "absolute",
+      opacity:Math.random()
+    }}
+  >
+    <i class="ri-star-s-fill"></i>
+  </div>),(<div
+    style={{
+      top: this.randompercent(),
+      right: this.randompercent(),
+      position: "absolute",
+      opacity:Math.random()
+    }}
+  >
+    <i class="ri-star-s-fill"></i>
+  </div>),(<div
+    style={{
+      top: this.randompercent(),
+      right: this.randompercent(),
+      position: "absolute",
+      opacity:Math.random()
+    }}
+  >
+    <i class="ri-star-s-fill"></i>
+  </div>),(<div
+    style={{
+      top: this.randompercent(),
+      right: this.randompercent(),
+      position: "absolute",
+      opacity:Math.random()
+    }}
+  >
+    <i class="ri-star-s-fill"></i>
+  </div>),(<div
+    style={{
+      top: this.randompercent(),
+      right: this.randompercent(),
+      position: "absolute",
+      opacity:Math.random()
+    }}
+  >
+    <i class="ri-star-s-fill"></i>
+  </div>),(<div
+    style={{
+      top: this.randompercent(),
+      right: this.randompercent(),
+      position: "absolute",
+      opacity:Math.random()
+    }}
+  >
+    <i class="ri-star-s-fill"></i>
+  </div>),(<div
+    style={{
+      top: this.randompercent(),
+      right: this.randompercent(),
+      position: "absolute",
+      opacity:Math.random()
+    }}
+  >
+    <i class="ri-star-s-fill"></i>
+  </div>),(<div
+    style={{
+      top: this.randompercent(),
+      right: this.randompercent(),
+      position: "absolute",
+      opacity:Math.random()
+    }}
+  >
+    <i class="ri-star-s-fill"></i>
+  </div>),(<div
+    style={{
+      top: this.randompercent(),
+      right: this.randompercent(),
+      position: "absolute",
+      opacity:Math.random()
+    }}
+  >
+    <i class="ri-star-s-fill"></i>
+  </div>),(<div
+    style={{
+      top: this.randompercent(),
+      right: this.randompercent(),
+      position: "absolute",
+      opacity:Math.random()
+    }}
+  >
+    <i class="ri-star-s-fill"></i>
+  </div>),(<div
+    style={{
+      top: this.randompercent(),
+      right: this.randompercent(),
+      position: "absolute",
+      opacity:Math.random()
+    }}
+  >
+    <i class="ri-star-s-fill"></i>
+  </div>),(<div
+    style={{
+      top: this.randompercent(),
+      right: this.randompercent(),
+      position: "absolute",
+      opacity:Math.random()
+    }}
+  >
+    <i class="ri-star-s-fill"></i>
+  </div>),(<div
+    style={{
+      top: this.randompercent(),
+      right: this.randompercent(),
+      position: "absolute",
+      opacity:Math.random()
+    }}
+  >
+    <i class="ri-star-s-fill"></i>
+  </div>),(<div
+    style={{
+      top: this.randompercent(),
+      right: this.randompercent(),
+      position: "absolute",
+      opacity:Math.random()
+    }}
+  >
+    <i class="ri-star-s-fill"></i>
+  </div>),(<div
+    style={{
+      top: this.randompercent(),
+      right: this.randompercent(),
+      position: "absolute",
+      opacity:Math.random()
+    }}
+  >
+    <i class="ri-star-s-fill"></i>
+  </div>),(<div
+    style={{
+      top: this.randompercent(),
+      right: this.randompercent(),
+      position: "absolute",
+      opacity:Math.random()
+    }}
+  >
+    <i class="ri-star-s-fill"></i>
+  </div>),(<div
+    style={{
+      top: this.randompercent(),
+      right: this.randompercent(),
+      position: "absolute",
+      opacity:Math.random()
+    }}
+  >
+    <i class="ri-star-s-fill"></i>
+  </div>),(<div
+    style={{
+      top: this.randompercent(),
+      right: this.randompercent(),
+      position: "absolute",
+      opacity:Math.random()
+    }}
+  >
+    <i class="ri-star-s-fill"></i>
+  </div>),(<div
+    style={{
+      top: this.randompercent(),
+      right: this.randompercent(),
+      position: "absolute",
+      opacity:Math.random()
+    }}
+  >
+    <i class="ri-star-s-fill"></i>
+  </div>),(<div
+    style={{
+      top: this.randompercent(),
+      right: this.randompercent(),
+      position: "absolute",
+      opacity:Math.random()
+    }}
+  >
+    <i class="ri-star-s-fill"></i>
+  </div>),(<div
+    style={{
+      top: this.randompercent(),
+      right: this.randompercent(),
+      position: "absolute",
+      opacity:Math.random()
+    }}
+  >
+    <i class="ri-star-s-fill"></i>
+  </div>),(<div
     style={{
       top: this.randompercent(),
       right: this.randompercent(),

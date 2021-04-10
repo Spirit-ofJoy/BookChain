@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
 
 .style {
-
   padding: 0;
 }
 
@@ -77,7 +76,7 @@
     -ms-transition: all 0.4s;
     -o-transition: all 0.4s;
     transition: all 0.4s;
-    
+
     max-height: 0;
     display: block;
     overflow: hidden;
