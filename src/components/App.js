@@ -11,7 +11,7 @@ import Marketplace from '../abis/Marketplace.json'
 import Navbar from './Navbar'
 import Network from './Network'
 import Main from './Main'
-import Dashboard from './Dashboard'
+import Dashboard from './views/Dashboard/Dashboard'
 import Loading from "./Loading"
 
 class App extends Component {
@@ -42,7 +42,7 @@ class App extends Component {
     const networkId = await web3.eth.net.getId()
     const networkData = Marketplace.networks[networkId]
     if(networkData) {
-      const marketplace = web3.eth.Contract(Marketplace.abi, networkData.address)
+      const marketplace = new web3.eth.Contract(Marketplace.abi, networkData.address)
       this.setState({ marketplace })
       const productCount = await marketplace.methods.productCount().call()
       this.setState({ productCount })

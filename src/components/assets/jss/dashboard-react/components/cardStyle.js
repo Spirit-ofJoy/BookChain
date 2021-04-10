@@ -2,7 +2,7 @@ import {
   blackColor,
   whiteColor,
   hexToRgb
-} from "assets/jss/dashboard-react.js";
+} from "../../dashboard-react";
 
 const cardStyle = {
   card: {
