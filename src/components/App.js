@@ -18,6 +18,8 @@ import B from "./Z_Final/searchProducts_history";
 import C from "./Z_Final/ownedItems";
 import D from "./Z_Final/forSelling";
 
+import Metamask from "../components/metamask/main_screen"
+
 import Background from "./background_star/background";
 // import Loading from "../components/home_page/Loading";
 import Blogs from "../components/blogs/Blog_List"
@@ -131,6 +133,9 @@ class App extends Component {
             <Route path="/" exact>
               <HomePage />
             </Route>
+            <Route path="/metamask" exact>
+                  <Metamask />
+                </Route>
 
             <Route>
               <Navbar account={this.state.account} />

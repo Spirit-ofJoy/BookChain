@@ -19,7 +19,7 @@ const HomeModal = (props) => {
                         </div>
                         <div className="card-body">
                             <p className="card-text">Our app works with the help of Metamask Chrome extension. </p>
-                            <button type="button" className="btn btn-success" id="metamask-btn">Know More</button>
+                            <a href="http://localhost:3000/metamask"><button  type="button" className="btn btn-success" id="metamask-btn">Know More</button></a>
                         </div>
                     </div>
                     <div className="card col" style={{ width: '18rem' }}>
