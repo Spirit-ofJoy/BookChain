@@ -5,19 +5,24 @@ class BlogList extends Component {
   state = [
     {
       heading:"added",
-      content:"something"
+      content:"something",
+      blogger:"aihfoe3e54vs5e42e4"
     },{
       heading:"request",
-      content:"something"
+      content:"something",
+      blogger:"aihfoe3e54vs5e42e4"
     },{
       heading:"notice",
-      content:"everything"
+      content:"everything",
+      blogger:"aihfoe3e54vs5e42e4"
     },{
       heading:"lmao",
-      content:"lol"
+      content:"lol",
+      blogger:"aihfoe3e54vs5e42e4"
     },{
       heading:"added",
-      content:"op bhai op"
+      content:"op bhai op",
+      blogger:"aihfoe3e54vs5e42e4"
     }
   ];
 

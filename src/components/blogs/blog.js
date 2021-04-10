@@ -1,14 +1,16 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "./blog.css";
 
 class Blog extends Component {
   state = {
-    heading:" ",
-    content:" "
+    heading: " ",
+    content: " ",
+    blogger: " "
   };
 
   /**
-   * 
+   *
    * @param {string} heading the heading of the content
    * @returns A JSX with heading and appropriate icon styled with classes with it
    */
@@ -54,6 +56,10 @@ class Blog extends Component {
           <div className="blog-content-div">
             <p className="blog-content blog-padding-content">
               {ParticularCard.content}
+              <br />
+              <span className="blog-blogger-name">
+                - User: <Link>{ParticularCard.blogger}</Link>
+              </span>
             </p>
           </div>
         </div>
@@ -61,7 +67,7 @@ class Blog extends Component {
     });
     if (AllCardDetails.length) {
       return (
-        <div className="row g-4 set-height-in-items-container">{CardList}</div>
+        <div className="row g-4 set-width-in-blog-container">{CardList}</div>
       );
     } else {
       return (
@@ -75,7 +81,6 @@ class Blog extends Component {
   /**
    * End
    */
-
 }
 
 export default Blog;
