@@ -20,6 +20,11 @@ Built with react and hopefully, HOPEFULLY we will host it so everyone can see it
 
 Keep tuned for all the updates
 
+<p id="About"><h2><font>:beginner: About </font></h2></p>
+<br>
+<!-- Description -->
+<font face = "Verdana"> A blockchain-powered twist to the re-sale of used books and other commodities with a focus on annonymity and cryptocurrency-based transactions </font>
+
 
 <!-- Installation -->
 <p id="Installation"><h2><font>🚀 Installation </font></h2></p>
@@ -43,11 +48,8 @@ npm start
 ```
 * After this the code will start compiling and after it has compiled the code, you can head to [http://localhost:3000](http://localhost:3000) and try the app yourself
 
-<p id="About"><h2><font>:beginner: About </font></h2></p>
-<br>
-<!-- Description -->
-<font face = "Verdana"> A blockchain-powered twist to the re-sale of used books and other commodities with a focus on annonymity and cryptocurrency-based transactions </font>
-
+<p id="License"><h2><font>📘 License </font></h2></p>
+<font face = "Verdana"> Distributed under the MIT License. Refer to the <a href="https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt">following</a> for more information.</font>
 
 <p id="Developers"><h2><font> :pencil: Contributors </font></h2></p>
 <UL>
