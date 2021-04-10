@@ -24,6 +24,7 @@ import Background from "./background_star/background";
 // import Loading from "../components/home_page/Loading";
 import Blogs from "../components/blogs/Blog_List"
 import HomePage from '../components/home_page/Home';
+import Loader from "./Loader"
 // import Dash from "../components/views/Dashboard/Dashboard"
 
 class App extends Component {
@@ -143,6 +144,7 @@ class App extends Component {
 
 
               <Route path="/productAdd" exact>
+              <Loader time={0.4} />
                   <Background />
                   {/* <Loading time={0.3} /> */}
                   <A
@@ -154,6 +156,7 @@ class App extends Component {
                 </Route>
 
                 <Route path="/ItemsOnSale" exact>
+                <Loader time={0.4} />
                   <Background />
                   <D
                     account={this.state.account}
@@ -164,6 +167,7 @@ class App extends Component {
                 </Route>
 
                 <Route path="/ItemsOwned" exact>
+                <Loader time={0.4} />
                   <Background />
 
                   <C
@@ -175,6 +179,7 @@ class App extends Component {
                 </Route>
 
                 <Route path="/search" exact>
+                <Loader time={0.4} />
                   <Background />
 
                   <B
@@ -185,6 +190,7 @@ class App extends Component {
                   />
                 </Route>
                 <Route path="/network" exact>
+                <Loader time={0.4} />
                   <Blogs
                     account={this.state.account}
                     posts={this.state.posts}
