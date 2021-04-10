@@ -9,9 +9,8 @@ contract Marketplace {
 
     struct Post {
         uint id;
-        string content;
-        uint tipAmount;
-        address payable author;
+        string content;   
+        address payable writer;
     }
 
     struct Product {
@@ -28,9 +27,10 @@ contract Marketplace {
     event PostCreated(
         uint id,
         string content,
-        uint tipAmount,
-        address payable author
+        address payable writer
     );
+
+
 
     event ProductCreated(
         uint id,
@@ -46,6 +46,8 @@ contract Marketplace {
     event ProductPurchased(
         uint id,
         string name,
+        string info,
+        string author,
         uint price,
         address payable owner,
         bool purchased,
@@ -62,9 +64,9 @@ contract Marketplace {
         // Increment the post count
         postCount ++;
         // Create the post
-        posts[postCount] = Post(postCount, _content, 0, msg.sender);
+        posts[postCount] = Post(postCount, _content, msg.sender);
         // Trigger event
-        emit PostCreated(postCount, _content, 0, msg.sender);
+        emit PostCreated(postCount, _content, msg.sender);
     }
 
 
@@ -109,6 +111,6 @@ contract Marketplace {
         // Pay the seller by sending them Ether
         address(_seller).transfer(msg.value);
         // Trigger an event
-        emit ProductPurchased(productCount, _product.name, _product.price, msg.sender, true, og_owner);
+        emit ProductPurchased(productCount, _product.name, _product.info, _product.author, _product.price, msg.sender, true, og_owner);
     }
 }

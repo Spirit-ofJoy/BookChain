@@ -42,7 +42,7 @@ class App extends Component {
     const networkId = await web3.eth.net.getId()
     const networkData = Marketplace.networks[networkId]
     if(networkData) {
-      const marketplace = new web3.eth.Contract(Marketplace.abi, networkData.address)
+      const marketplace = web3.eth.Contract(Marketplace.abi, networkData.address)
       this.setState({ marketplace })
       const productCount = await marketplace.methods.productCount().call()
       this.setState({ productCount })
@@ -53,19 +53,20 @@ class App extends Component {
           products: [...this.state.products, product]
         })
       }
-      this.setState({ loading: false})
+      
       const postCount = await marketplace.methods.postCount().call()
       this.setState({ postCount })
       // Load Posts
-      for (var i = 1; i <= postCount; i++) {
-        const post = await marketplace.methods.posts(i).call()
+      for (var j = 1; j <= postCount; j++) {
+        const post = await marketplace.methods.posts(j).call()
         this.setState({
           posts: [...this.state.posts, post]
         })
       }
+      this.setState({ loading: false})
       // // Sort posts. Show highest tipped posts first
       // this.setState({
-      //   posts: this.state.posts.sort((a,b) => b.tipAmount - a.tipAmount )
+      //   posts: this.state.posts.sort((a) => a.postCount )
       // })
     } else {
       window.alert('Marketplace contract not deployed to detected network.')
@@ -139,9 +140,10 @@ class App extends Component {
       </Route>
         <Route path="/network" exact>
               <Network
+                    account={this.state.account}
                     posts={this.state.posts}
                     createPost={this.createPost}
-                    tipPost={this.tipPost}
+                    
                   />
       </Route>
       </Switch>
