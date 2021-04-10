@@ -18,9 +18,21 @@ class Network extends Component {
                 <form onSubmit={(event) => {
                   event.preventDefault()
                   const content = this.postContent.value
+                  const heading = this.postHeading.value
                   console.log(this.props.posts.writer)
-                  this.props.createPost(content)
+                  this.props.createPost(heading, content)
                 }}>
+                <div className="form-group mr-sm-2">
+                <div class="form-group">
+                  <label for="postHeading">Example multiple select</label>
+                  <select multiple class="form-control" id="postHeading" ref={(input) => { this.postHeading = input }}>
+                    <option>others</option>
+                    <option>added</option>
+                    <option>request</option>
+                    <option>notice</option>
+                  </select>
+                </div>
+                </div>
                 <div className="form-group mr-sm-2">
                   <input
                     id="postContent"

@@ -21,7 +21,7 @@ body {
   }
 
   body {
-      background: url("https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif") ;
+      /* background: url("https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif") ; */
       background-size: cover;
     -webkit-font-smoothing: antialiased;
   }

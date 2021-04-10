@@ -13,6 +13,8 @@ import Network from './Network'
 import Main from './Main'
 import Dashboard from './Dashboard'
 import Loading from "./Loading"
+import Blogs from "../components/blogs/Blog_List"
+// import Dash from "../components/views/Dashboard/Dashboard"
 
 class App extends Component {
 
@@ -57,7 +59,7 @@ class App extends Component {
       const postCount = await marketplace.methods.postCount().call()
       this.setState({ postCount })
       // Load Posts
-      for (var j = 1; j <= postCount; j++) {
+      for (var j = postCount; j >= 1; j--) {
         const post = await marketplace.methods.posts(j).call()
         this.setState({
           posts: [...this.state.posts, post]
@@ -88,9 +90,9 @@ class App extends Component {
     this.purchaseProduct = this.purchaseProduct.bind(this)
   }
 
-  createPost(content) {
+  createPost(heading, content) {
     this.setState({ loading: true })
-    this.state.marketplace.methods.createPost(content).send({ from: this.state.account })
+    this.state.marketplace.methods.createPost(heading, content).send({ from: this.state.account })
     .once('receipt', (receipt) => {
       this.setState({ loading: false })
     })
@@ -131,6 +133,7 @@ class App extends Component {
       </Route>
         
         <Route path="/dashboard" exact>
+              {/* <Dash /> */}
               <Dashboard 
                 account={this.state.account}
                 products={this.state.products}
@@ -139,12 +142,18 @@ class App extends Component {
               />
       </Route>
         <Route path="/network" exact>
-              <Network
+                  <Blogs
+                    account={this.state.account}
+                    posts = {this.state.posts}
+                    createPost={this.createPost}
+                    />
+
+              {/* <Network
                     account={this.state.account}
                     posts={this.state.posts}
                     createPost={this.createPost}
                     
-                  />
+                  /> */}
       </Route>
       </Switch>
       </Route>

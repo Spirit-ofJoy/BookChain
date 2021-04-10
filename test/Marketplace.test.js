@@ -113,7 +113,7 @@ contract('Marketplace', ([deployer, seller, buyer, writer]) => {
     let result, postCount
 
     before(async () => {
-      result = await marketplace.createPost('This is my first post', { from: writer })
+      result = await marketplace.createPost('Topic','This is my first post', { from: writer })
       postCount = await marketplace.postCount()
     })
 
@@ -122,16 +122,18 @@ contract('Marketplace', ([deployer, seller, buyer, writer]) => {
       assert.equal(postCount, 1)
       const event = result.logs[0].args
       assert.equal(event.id.toNumber(), postCount.toNumber(), 'id is correct')
+      assert.equal(event.heading, 'Topic', 'Heading is correct')
       assert.equal(event.content, 'This is my first post', 'content is correct')
       assert.equal(event.writer, writer, 'writer is correct')
 
       // FAILURE: Post must have content
-      await marketplace.createPost('', { from: writer }).should.be.rejected;
+      await marketplace.createPost('','', { from: writer }).should.be.rejected;
     })
 
     it('lists posts', async () => {
       const post = await marketplace.posts(postCount)
       assert.equal(post.id.toNumber(), postCount.toNumber(), 'id is correct')
+      assert.equal(post.heading, 'Topic', 'Heading is correct')
       assert.equal(post.content, 'This is my first post', 'content is correct')
       assert.equal(post.writer, writer, 'writer is correct')
     })

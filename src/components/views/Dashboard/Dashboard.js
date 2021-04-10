@@ -111,13 +111,36 @@ export default function Dashboard() {
             <CardBody>
               <Table
                 tableHeaderColor="warning"
-                tableHead={["ID", "Name", "Expected Price"]}
-                tableData={[
-                  ["1", "Chess", "70 wei"],
-                  ["2", "Physics Books", "200 wei",],
-                  ["3", "Chemistry Books", "140 wei",],
-                  ["4", "Notes 2nd Sem", "80 wei", ]
-                ]}
+                tableHead={["ID", "Name", "Info", "Author", "Price", "Owner", "Status"]}
+                
+                tableData={this.props.products.map((product, key) => {
+                          return (
+                            <div key={key}>
+                              [{!product.purchased ? product.id.toString() : null},
+                              {!product.purchased ? product.name : null},
+                              {!product.purchased ? product.info : null},
+                              {!product.purchased ? product.author : null},
+                              {!product.purchased ? window.web3.utils.fromWei(product.price.toString(), 'Ether') : null},
+                              {!product.purchased ? product.owner : null}
+                              
+                                {(!product.purchased && (product.owner !== this.props.account))
+                                  ? <button
+                                    className="btn btn-danger"
+                                    name={product.id}
+                                    value={product.price}
+                                    onClick={(event) => {
+                                      this.props.purchaseProduct(event.target.name, event.target.value)
+                                    }}
+                                  >
+                                    Buy
+                        </button>
+                                  : (!product.purchased) ? "Owner" : null
+                                }
+                              
+
+                           ] </div>
+                          )
+                        })}
               />
             </CardBody>
           </Card>

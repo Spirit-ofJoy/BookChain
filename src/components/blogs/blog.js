@@ -6,7 +6,7 @@ class Blog extends Component {
   state = {
     heading: " ",
     content: " ",
-    blogger: " "
+    writer: " "
   };
 
   /**
@@ -18,25 +18,25 @@ class Blog extends Component {
     if (heading === "added") {
       return (
         <h1 className="blog-heading">
-          Added <i class="ri-check-double-line blog-heading-added"></i>{" "}
+          Added <i className="ri-check-double-line blog-heading-added"></i>{" "}
         </h1>
       );
     } else if (heading === "notice") {
       return (
         <h1 className="blog-heading">
-          Notice <i class="ri-file-paper-2-line blog-heading-notice"></i>{" "}
+          Notice <i className="ri-file-paper-2-line blog-heading-notice"></i>{" "}
         </h1>
       );
     } else if (heading === "request" || heading === "requesting") {
       return (
         <h1 className="blog-heading">
-          Request <i class="ri-add-fill blog-heading-request"></i>{" "}
+          Request <i className="ri-add-fill blog-heading-request"></i>{" "}
         </h1>
       );
     } else {
       return (
         <h1 className="blog-heading">
-          Thoughts <i class="ri-chat-1-line blog-heading-else"></i>{" "}
+          Thoughts <i className="ri-chat-1-line blog-heading-else"></i>{" "}
         </h1>
       );
     }
@@ -58,7 +58,7 @@ class Blog extends Component {
               {ParticularCard.content}
               <br />
               <span className="blog-blogger-name">
-                - User: <Link>{ParticularCard.blogger}</Link>
+                - User: <Link>{ParticularCard.writer}</Link>
               </span>
             </p>
           </div>

@@ -9,6 +9,7 @@ contract Marketplace {
 
     struct Post {
         uint id;
+        string heading;
         string content;   
         address payable writer;
     }
@@ -26,6 +27,7 @@ contract Marketplace {
 
     event PostCreated(
         uint id,
+        string heading,
         string content,
         address payable writer
     );
@@ -58,15 +60,17 @@ contract Marketplace {
         name = "BookChain";
     }
 
-    function createPost(string memory _content) public {
+    function createPost(string memory _heading, string memory _content) public {
         // Require valid content
+        // require(bytes(_heading).length > 0);
         require(bytes(_content).length > 0);
+        
         // Increment the post count
         postCount ++;
         // Create the post
-        posts[postCount] = Post(postCount, _content, msg.sender);
+        posts[postCount] = Post(postCount, _heading, _content, msg.sender);
         // Trigger event
-        emit PostCreated(postCount, _content, msg.sender);
+        emit PostCreated(postCount, _heading, _content, msg.sender);
     }
 
 
