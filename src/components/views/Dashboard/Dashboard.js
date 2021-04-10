@@ -6,23 +6,23 @@ import Icon from "@material-ui/core/Icon";
 // @material-ui/icons
 import Store from "@material-ui/icons/Store";
 import Code from "@material-ui/icons/Code";// core components
-import GridItem from "components/Grid/GridItem.js";
-import GridContainer from "components/Grid/GridContainer.js";
-import Table from "components/Table/Table.js";
-import Tasks from "components/Tasks/Tasks.js";
-import CustomTabs from "components/CustomTabs/CustomTabs.js";
-import Card from "components/Card/Card.js";
-import CardHeader from "components/Card/CardHeader.js";
-import CardIcon from "components/Card/CardIcon.js";
-import CardBody from "components/Card/CardBody.js";
-import { bought, to_sell } from "variables/general.js";
+import GridItem from "../../components/Grid/GridItem.js";
+import GridContainer from "../../components/Grid/GridContainer.js";
+import Table from "../../components/Table/Table.js";
+import Tasks from "../../components/Tasks/Tasks.js";
+import CustomTabs from "../../components/CustomTabs/CustomTabs.js";
+import Card from '../../components/Card/Card';//"components/Card/Card.js";
+import CardHeader from "../../components/Card/CardHeader.js";
+import CardIcon from "../../components/Card/CardIcon.js";
+import CardBody from "../../components/Card/CardBody.js";
+import { bought, to_sell } from '../../variables/general'//"variables/general.js";
 
 
-import styles from "assets/jss/dashboard-react/views/dashboardStyle.js";
+import styles from '../../assets/jss/dashboard-react/views/dashboardStyle';
 
 const useStyles = makeStyles(styles);
 
-export default function Dashboard() {
+const Dashboard = (props) => {
   const classes = useStyles();
   return (
     <div>
@@ -109,6 +109,16 @@ export default function Dashboard() {
               </p>
             </CardHeader>
             <CardBody>
+              {/* <Table
+                tableHeaderColor="warning"
+                tableHead={["ID", "Name", "Expected Price"]}
+                tableData={[
+                  ["1", "Chess", "70 wei"],
+                  ["2", "Physics Books", "200 wei",],
+                  ["3", "Chemistry Books", "140 wei",],
+                  ["4", "Notes 2nd Sem", "80 wei", ]
+                ]}
+              /> */}
               <Table
                 tableHeaderColor="warning"
                 tableHead={["ID", "Name", "Info", "Author", "Price", "Owner", "Status"]}
@@ -149,3 +159,5 @@ export default function Dashboard() {
     </div>
   );
 }
+
+export default Dashboard;

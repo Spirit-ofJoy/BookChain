@@ -8,7 +8,7 @@ import TableRow from "@material-ui/core/TableRow";
 import TableBody from "@material-ui/core/TableBody";
 import TableCell from "@material-ui/core/TableCell";
 // core components
-import styles from "assets/jss/dashboard-react/components/tableStyle.js";
+import styles from '../../assets/jss/dashboard-react/components/tableStyle.js';//"assets/jss/dashboard-react/components/tableStyle.js";
 
 const useStyles = makeStyles(styles);
 
@@ -69,5 +69,5 @@ CustomTable.propTypes = {
     "gray"
   ]),
   tableHead: PropTypes.arrayOf(PropTypes.string),
-  tableData: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string))
+  tableData: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.object))
 };
