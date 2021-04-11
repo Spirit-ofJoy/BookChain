@@ -135,14 +135,14 @@ class App extends Component {
         <BrowserRouter>
           <Switch>
             <Route path="/" exact>
-              <HomePage />
+              <Home />
             </Route>
             <Route path="/metamask" exact>
               <Metamask />
             </Route>
 
-            <Route path="/h" exact>
-              <Home />
+            <Route path="/home" exact>
+              <HomePage />
             </Route>
 
             <Route>
