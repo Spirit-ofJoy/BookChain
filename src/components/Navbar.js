@@ -1,10 +1,9 @@
-import React, { Component } from 'react';
-import { Navbar, Nav, NavDropdown, Button } from "react-bootstrap";
+import React, { Component } from "react";
+import { Navbar, Nav, NavLink, NavDropdown, Button } from "react-bootstrap";
 import im1 from "../images/favicon.png";
 import "./navbar.css";
 
 class Navigbar extends Component {
-
   render() {
     return (
       <>
@@ -22,45 +21,40 @@ class Navigbar extends Component {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
+              <NavLink eventKey="blogs" hresname="nav-items" href="/productAdd">
+                Add Books
+              </NavLink>
 
-              <Nav.Link eventKey="blogs" hresname="nav-items" href="/productAdd">
-
-                Add Products
-
-</Nav.Link>
-
-
-
-              <Nav.Link eventKey="blogs" hresname="nav-items" href="/ItemsOnSale">
-
+              <NavLink
+                eventKey="blogs"
+                hresname="nav-items"
+                href="/ItemsOnSale"
+              >
                 Items on Sale
+              </NavLink>
 
-</Nav.Link>
-
-
-
-              <Nav.Link eventKey="blogs" hresname="nav-items" href="/ItemsOwned">
-
+              <NavLink eventKey="blogs" hresname="nav-items" href="/ItemsOwned">
                 My Items
+              </NavLink>
 
-</Nav.Link>
-
-
-
-              <Nav.Link eventKey="blogs" hresname="nav-items" href="/search">
-
+              <NavLink eventKey="blogs" hresname="nav-items" href="/search">
                 Search Books
+              </NavLink>
 
-</Nav.Link>
-
-              <Nav.Link className="itemfont" eventKey="blogs" href="/network" className="nav-items">
+              <NavLink
+                className="itemfont"
+                eventKey="blogs"
+                href="/network"
+                className="nav-items"
+              >
                 Discussion
-            </Nav.Link>
-
+              </NavLink>
             </Nav>
             <ul className="navbar-nav px-3">
               <li className="nav-item text-nowrap d-none d-sm-none d-sm-block">
-                <small className="text-white"><span id="account">{this.props.account}</span></small>
+                <small className="text-white">
+                  <span id="account">{this.props.account}</span>
+                </small>
               </li>
             </ul>
           </Navbar.Collapse>
