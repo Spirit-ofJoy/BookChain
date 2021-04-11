@@ -32,7 +32,10 @@
 
 .textfont {
   font-family: Audiowide;
-  font-style: italic;
+}
+
+.active {
+  color: aquamarine;
 }
 
 .itemfont {

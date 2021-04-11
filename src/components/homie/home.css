@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+.the-fixed-background-root-div {
+  position: relative;
+  width: 100%;
+  color: white;
+}
+
+.the-fixed-background-root-div {
+  background: rgb(11, 34, 56);
+}
+
+.colored-background-div {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgb(11, 34, 56);
+}
+
+.set-div-to-full-screen {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.set-div-to-full-screen > div {
+  color: white;
+}
+
+.clip-path-no-bottom {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0);
+}
+
+.clip-path-no-up {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
+}
+
+.background-choose {
+  background: rgb(28, 0, 255);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(28, 0, 255, 1) 0%,
+    rgba(0, 203, 255, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(28, 0, 255, 1) 0%,
+    rgba(0, 203, 255, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(28, 0, 255, 1) 0%,
+    rgba(0, 203, 255, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1c00ff",endColorstr="#00cbff",GradientType=1);
+}
+
+.text-in-special {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.text-in-special > div {
+  padding-top: 250px;
+  margin-right: 150px;
+}
+
+.heading {
+  font-family: "Lato", sans-serif !important;
+  text-shadow: none;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.text-in-special .heading:hover {
+  color: black;
+}
+
+.heading > span {
+  font-size: 3rem;
+  color: rgb(0, 153, 255);
+}
+
+.heading:hover > i.ri-check-double-line {
+  transition: 0.3s ease;
+  padding-left: 1rem;
+  color: rgb(0, 255, 55);
+}
+
+.heading > i.ri-check-double-line {
+  transition: 0.3s ease;
+  vertical-align: middle;
+  font-size: larger;
+}
+
+.links-homie,
+.links-homie:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.set-div-to-full-screen > div {
+  direction: ltr;
+  padding-bottom: 150px;
+  padding-left: 100px;
+  padding-bottom: 150px;
+  padding-left: 100px;
+}
+
+.set-div-to-full-screen > div > h1.heading {
+  direction: ltr;
+  font-weight: bold;
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+}
+
+.set-div-to-full-screen > div > h2.heading {
+  direction: ltr;
+  color: rgba(255, 255, 255, 0.514);
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+}
+
+#MetaMask_homepage {
+  padding-top: 100px;
+  padding-bottom: 0;
+  padding-left: 100px;
+}
+
+#MetaMask_homepage_div {
+  padding-bottom: 250px;
+  margin-right: 150px;
+}
+
+.heading:hover > i.ri-bookmark-line {
+  padding-left: 1rem;
+  color: rgb(0, 255, 242);
+}
+
+.heading > i.ri-bookmark-line {
+  vertical-align: middle;
+  font-size: larger;
+  color: rgb(0, 255, 55);
+  transition: .3s ease;
+}

@@ -6,7 +6,7 @@
 .metamask-logo-metamask-about-page {
   width: var(--metamask-logo-size-in-px);
   height: var(--metamask-logo-size-in-px);
-  background-color: rgba(255, 255, 255, 0.383);
+  background-color: rgba(255, 255, 255, 0.13);
   border-radius: 30px;
   display: grid;
   place-items: center;
