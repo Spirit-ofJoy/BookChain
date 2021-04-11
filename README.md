@@ -13,47 +13,71 @@
 &nbsp;
 ![Built with Ethereum](https://img.shields.io/badge/Ethereum-3B80AE?style=for-the-badge&logo=Ethereum&logoColor=white)
 
+<p align="center"> 
 
+<img src="./docs/logo.svg">
+</p>
 
-This is the repository for the project BookChain, a web application built for Hack36 2021 by Baracuda Viktara. 
+This is the repository for the project BookChain, a web application built for Hack36 2021 by [Baracuda Viktara](#Developers).
 
 <a href="https://hack36.com"> <img src="http://bit.ly/BuiltAtHack36" height=28px> </a>
 
+<p align="center"><img src="./docs/1.png"></p>
 <p id="About"><h2><font>:beginner: About </font></h2></p>
 <br>
 <!-- Description -->
 <font face = "Verdana"> A blockchain-powered twist to the re-sale of used books and other commodities with a focus on annonymity and cryptocurrency-based transactions </font>
 
 ## 📫 Idea Abstract
-<a href = "https://drive.google.com/file/d/1K_7sKerCprp93bgJX5A84N8AO0eP_J6I/view?usp=sharing"> Presentation to show key features</a> 
+
+<a href = "https://drive.google.com/file/d/1K_7sKerCprp93bgJX5A84N8AO0eP_J6I/view?usp=sharing"> Presentation to show key features</a>
 
 ## :movie_camera: Demo-Video
-<a href = "https://drive.google.com/file/d/1jsxpdW_j4HpgZhPgI1cpyyKdoY_w4hos/view?usp=sharing"> Demo Video of application</a> 
+
+<a href = "https://drive.google.com/file/d/1jsxpdW_j4HpgZhPgI1cpyyKdoY_w4hos/view?usp=sharing"> Demo Video of application</a>
 
 <!-- Installation -->
 <p id="Installation"><h2><font>🚀 Installation </font></h2></p>
 
-If you want to test the code, you can do it by following these few steps 
-* Make sure that you have the current [LTS version of Node.JS](https://nodejs.org/en/) installed on your PC. You can check using the command ```node -v``` on the commandline. Else you can head to the node.js website, download it and install it before proceeding forword.  
-* Make sure you have the Metamask Chrome extension installed. Head over and refer to [here](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en) to install the extension and enable it in your browser.
-* Install Ganache and assign a new workspace. Add truffle-config.js in the project settings. Set Metamask account by importing a local account on the private Ganache blockchain network.
-* Clone the repository with the following command or download the compressed zip file using this [link](https://github.com/Spirit-ofJoy/BookChain/archive/refs/heads/master.zip)
-```
-git clone https://github.com/Spirit-ofJoy/BookChain BookChain
-```
+If you want to test the code, you can do it by following these few steps
 
-* Navigate to the repository and open terminal. You can also open it in your code editor of choice. However for simplicity we recommend Visual Studio Code.
-* Enter in the the following command in the terminal wait till node package manager installs all the dependencies 
-```
-npm install
-```
+- Make sure that you have the current [LTS version of Node.JS](https://nodejs.org/en/) installed on your PC. You can check using the command `node -v` on the commandline. Else you can head to the node.js website, download it and install it before proceeding forword.
+- Make sure you have the `Metamask Chrome Extension` installed. Head over and refer to [here](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en) to install the extension and enable it in your browser.
+- Install `Ganache` and assign a new workspace. Add `truffle-config.js` in the project settings. Set Metamask account by importing a local account on the private Ganache blockchain network.
+- Clone the repository with the following command or download the compressed zip file using this [link](https://github.com/Spirit-ofJoy/BookChain/archive/refs/heads/master.zip)
 
-* Now that you have installed all the dependecies, enter
-```
-npm start
-```
-* After this the code will start compiling and after it has compiled the code, you can head to [http://localhost:3000](http://localhost:3000) and try the app yourself
+  ```
+  git clone https://github.com/Spirit-ofJoy/BookChain BookChain
+  ```
 
+- Navigate to the repository and open terminal. You can also open it in your code editor of choice. However for simplicity we recommend Visual Studio Code.
+- Enter in the the following command in the terminal wait till node package manager installs all the dependencies
+
+  ```
+  npm install
+  ```
+
+- Now that you have installed all the dependencies, enter
+  ```
+  npm start
+  ```
+- After this the code will start compiling and after it has compiled the code, you can head to [http://localhost:3000](http://localhost:3000) and try the app yourself
+
+<h2 id="Gallery"><font>:framed_picture: Gallery / Working </font></h2>
+<p align="center">
+  <h3 align="center">Blog</h3>
+  <img src="./docs/9%20(1).png">
+  <img src="./docs/9%20(2).png">
+  <h3 align="center">Buying an Item</h3>
+  <img src="./docs/5.png">
+  <img src="./docs/6.png">
+  <img src="./docs/7.png">
+  <h3 align="center">Adding a Product</h3>
+  <img src="./docs/0%20(1).png">
+  <img src="./docs/0%20(2).png">
+  <img src="./docs/0%20(3).png">
+  <img src="./docs/0%20(4).png">
+</p>
 <p id="License"><h2><font>📘 License </font></h2></p>
 <font face = "Verdana"> Created under the MIT License. Refer to the <a href="https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt">following</a> for more information.</font>
 
