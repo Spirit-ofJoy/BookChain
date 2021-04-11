@@ -11,6 +11,16 @@ class C extends Component {
           <div className="row">
             <main role="main" className="col-sm-12 nopad">
               <div className="content mr-auto ml-auto">
+              {/* <Typewriter
+                    className="type"
+                    style={{ color: "white" }}
+                    options={{
+                      strings: ["Welcome to", "BOOKCHAIN"],
+
+                      autoStart: true,
+                      loop: true,
+                    }}
+                  /> */}
                 <div className="container-fluid">
                   <Jumbotron
                     className="text-center"

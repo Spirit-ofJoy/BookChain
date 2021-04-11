@@ -15,16 +15,6 @@ class A extends Component {
               <div id="content">
                 <div className="container-fluid">
                   {/* <Jumbotron className="text-center" style={{ maxWidth: '60%' }}> */}
-                  <Typewriter
-                    className="type"
-                    style={{ color: "white" }}
-                    options={{
-                      strings: ["Welcome to", "BOOKCHAIN"],
-
-                      autoStart: true,
-                      loop: true,
-                    }}
-                  />
                   {/* </Jumbotron> */}
                 </div>
                 <p>&nbsp;</p>
