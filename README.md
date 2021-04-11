@@ -33,7 +33,7 @@ If you want to test the code, you can do it by following these few steps
 * Make sure you have the Metamask Chrome extension installed. Head over and refer to [here](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en) to install the extension and enable it in your browser.
 * Clone the repository with the following command or download the compressed zip file using this [link](https://github.com/Spirit-ofJoy/BookChain/archive/refs/heads/master.zip)
 ```
-git clone https://github.com/Spirit-ofJoy/BookChain
+git clone https://github.com/Spirit-ofJoy/BookChain BookChain
 ```
 
 * Navigate to the repository and open terminal. You can also open it in your code editor of choice. However for simplicity we recommend Visual Studio Code.
