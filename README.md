@@ -13,40 +13,43 @@
 &nbsp;
 ![Built with Ethereum](https://img.shields.io/badge/Ethereum-3B80AE?style=for-the-badge&logo=Ethereum&logoColor=white)
 
-
-
-This is the repository for the project BookChain, a web application built for Hack36 2021 by Baracuda Viktara. 
+This is the repository for the project BookChain, a web application built for Hack36 2021 by Baracuda Viktara.
 
 <a href="https://hack36.com"> <img src="http://bit.ly/BuiltAtHack36" height=28px> </a>
 
+<p align="center"><img src="./docs/1.png"></p>
 <p id="About"><h2><font>:beginner: About </font></h2></p>
 <br>
 <!-- Description -->
 <font face = "Verdana"> A blockchain-powered twist to the re-sale of used books and other commodities with a focus on annonymity and cryptocurrency-based transactions </font>
 
-
 <!-- Installation -->
 <p id="Installation"><h2><font>🚀 Installation </font></h2></p>
 
-If you want to test the code, you can do it by following these few steps 
-* Make sure that you have the current [LTS version of Node.JS](https://nodejs.org/en/) installed on your PC. You can check using the command ```node -v``` on the commandline. Else you can head to the node.js website, download it and install it before proceeding forword.  
-* Make sure you have the Metamask Chrome extension installed. Head over and refer to [here](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en) to install the extension and enable it in your browser.
-* Clone the repository with the following command or download the compressed zip file using this [link](https://github.com/Spirit-ofJoy/BookChain/archive/refs/heads/master.zip)
+If you want to test the code, you can do it by following these few steps
+
+- Make sure that you have the current [LTS version of Node.JS](https://nodejs.org/en/) installed on your PC. You can check using the command `node -v` on the commandline. Else you can head to the node.js website, download it and install it before proceeding forword.
+- Make sure you have the Metamask Chrome extension installed. Head over and refer to [here](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en) to install the extension and enable it in your browser.
+- Clone the repository with the following command or download the compressed zip file using this [link](https://github.com/Spirit-ofJoy/BookChain/archive/refs/heads/master.zip)
+
 ```
 git clone https://github.com/Spirit-ofJoy/BookChain
 ```
 
-* Navigate to the repository and open terminal. You can also open it in your code editor of choice. However for simplicity we recommend Visual Studio Code.
-* Enter in the the following command in the terminal wait till node package manager installs all the dependencies 
+- Navigate to the repository and open terminal. You can also open it in your code editor of choice. However for simplicity we recommend Visual Studio Code.
+- Enter in the the following command in the terminal wait till node package manager installs all the dependencies
+
 ```
 npm install
 ```
 
-* Now that you have installed all the dependecies, enter
+- Now that you have installed all the dependecies, enter
+
 ```
 npm start
 ```
-* After this the code will start compiling and after it has compiled the code, you can head to [http://localhost:3000](http://localhost:3000) and try the app yourself
+
+- After this the code will start compiling and after it has compiled the code, you can head to [http://localhost:3000](http://localhost:3000) and try the app yourself
 
 <p id="License"><h2><font>📘 License </font></h2></p>
 <font face = "Verdana"> Created under the MIT License. Refer to the <a href="https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt">following</a> for more information.</font>
