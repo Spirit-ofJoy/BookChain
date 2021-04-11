@@ -74,10 +74,23 @@ class Blog extends Component {
       );
     } else {
       return (
-        <div className="no-items-in-the-list">
-          No blogs could be found <br />
-          Try adding one.... : ) <br />
+        <div className="col-12 the-blog-containing-div">
+          <div className="blog-heading-div">
+            Notice
+          </div>
+
+          <div className="blog-content-div">
+            <p className="blog-content blog-padding-content">
+            No blogs could be found <br />
+          Try adding one.... : ) 
+              {/* <br /> */}
+              
+            </p>
+            
+          </div>
         </div>
+        
+       
       );
     }
   }

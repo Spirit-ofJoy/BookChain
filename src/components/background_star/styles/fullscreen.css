@@ -1,0 +1,43 @@
+:root  {
+    --scroll-bar-width-whole:10px;
+}
+
+.screen-covers-full-viewport {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.welcome-screen-1 {
+  background-color: rgb(36, 40, 46);
+  color: white;
+  display: grid;
+  place-items: center;
+}
+
+.screen-covers-full-viewport-fixed {
+  position: fixed;
+  width: calc(100%);
+  height: 100vh;
+  background: rgb(141, 238, 255);
+  background: -moz-linear-gradient(
+    60deg,
+    rgba(141, 238, 255, 1) 0%,
+    rgba(31, 62, 117, 1) 0%,
+    rgba(5, 4, 5, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    60deg,
+    rgba(141, 238, 255, 1) 0%,
+    rgba(31, 62, 117, 1) 0%,
+    rgba(5, 4, 5, 1) 100%
+  );
+  background: linear-gradient(
+    60deg,
+    rgba(141, 238, 255, 1) 0%,
+    rgba(31, 62, 117, 1) 0%,
+    rgba(5, 4, 5, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8deeff",endColorstr="#050405",GradientType=1);
+  color: white;
+}

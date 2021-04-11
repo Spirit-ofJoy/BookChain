@@ -24,6 +24,11 @@ This is the repository for the project BookChain, a web application built for Ha
 <!-- Description -->
 <font face = "Verdana"> A blockchain-powered twist to the re-sale of used books and other commodities with a focus on annonymity and cryptocurrency-based transactions </font>
 
+## 📫 Idea Abstract
+<a href = "https://drive.google.com/file/d/1K_7sKerCprp93bgJX5A84N8AO0eP_J6I/view?usp=sharing"> Presentation to show key features</a> 
+
+## :movie_camera: Demo-Video
+<a href = "https://drive.google.com/file/d/1jsxpdW_j4HpgZhPgI1cpyyKdoY_w4hos/view?usp=sharing"> Demo Video of application</a> 
 
 <!-- Installation -->
 <p id="Installation"><h2><font>🚀 Installation </font></h2></p>
@@ -33,7 +38,7 @@ If you want to test the code, you can do it by following these few steps
 * Make sure you have the Metamask Chrome extension installed. Head over and refer to [here](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en) to install the extension and enable it in your browser.
 * Clone the repository with the following command or download the compressed zip file using this [link](https://github.com/Spirit-ofJoy/BookChain/archive/refs/heads/master.zip)
 ```
-git clone https://github.com/Spirit-ofJoy/BookChain
+git clone https://github.com/Spirit-ofJoy/BookChain BookChain
 ```
 
 * Navigate to the repository and open terminal. You can also open it in your code editor of choice. However for simplicity we recommend Visual Studio Code.
