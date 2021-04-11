@@ -51,7 +51,7 @@ class Navigbar extends Component {
 
                 Search Books
 
-</Nav.Link>
+              </Nav.Link>
 
               <Nav.Link className="itemfont" eventKey="blogs" href="/network" className="nav-items">
                 Discussion
