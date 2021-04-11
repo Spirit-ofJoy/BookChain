@@ -36,6 +36,7 @@ This is the repository for the project BookChain, a web application built for Ha
 If you want to test the code, you can do it by following these few steps 
 * Make sure that you have the current [LTS version of Node.JS](https://nodejs.org/en/) installed on your PC. You can check using the command ```node -v``` on the commandline. Else you can head to the node.js website, download it and install it before proceeding forword.  
 * Make sure you have the Metamask Chrome extension installed. Head over and refer to [here](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en) to install the extension and enable it in your browser.
+* Install Ganache and assign a new workspace. Add truffle-config.js in the project settings. Set Metamask account by importing a local account on the private Ganache blockchain network.
 * Clone the repository with the following command or download the compressed zip file using this [link](https://github.com/Spirit-ofJoy/BookChain/archive/refs/heads/master.zip)
 ```
 git clone https://github.com/Spirit-ofJoy/BookChain BookChain
