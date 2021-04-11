@@ -24,6 +24,11 @@ This is the repository for the project BookChain, a web application built for Ha
 <!-- Description -->
 <font face = "Verdana"> A blockchain-powered twist to the re-sale of used books and other commodities with a focus on annonymity and cryptocurrency-based transactions </font>
 
+## 📫 Idea Abstract
+<a href = "https://drive.google.com/file/d/1K_7sKerCprp93bgJX5A84N8AO0eP_J6I/view?usp=sharing"> Presentation to show key features</a> 
+
+## :movie_camera: Demo-Video
+<a href = "https://drive.google.com/file/d/1jsxpdW_j4HpgZhPgI1cpyyKdoY_w4hos/view?usp=sharing"> Demo Video of application</a> 
 
 <!-- Installation -->
 <p id="Installation"><h2><font>🚀 Installation </font></h2></p>
