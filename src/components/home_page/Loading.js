@@ -17,7 +17,7 @@ function Loading({ time, confirmation }) {
 
   if (loading)
     return (
-      <div className="loader " style={{ animation: `fadeOut 2s`, animationDelay: `${time}s`}} >
+      <div className="loader " style={{ animation: `fadeOut 0.3s`, animationDelay: `${time}s`}} >
         <img src={m} alt="bh" height={800} width={600} style={{ animation: `fadeOut 2s`, animationDelay: `${time}s` }} id='bh' />
       </div>
     );

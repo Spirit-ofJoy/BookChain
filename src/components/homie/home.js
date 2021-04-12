@@ -9,6 +9,18 @@ class Home extends Component {
     return (
       <div className="the-fixed-background-root-div">
         <div className="colored-background-div"></div>
+        <div className="bottom-arrow-home-page" id="metamask-arrow-link">
+          <a href="/#metamask"><i class="ri-arrow-down-s-line"></i></a>
+        </div>
+        <div className="bottom-arrow-home-page" id="github-arrow-link">
+          <a href="/#github"><i class="ri-arrow-down-s-line"></i></a>
+        </div>
+        <div className="bottom-arrow-home-page" id="home-arrow-link">
+          <a href="/#bookchain"><i class="ri-arrow-up-s-line"></i></a>
+        </div>
+        <div id="metamask"></div>
+        <div id="github"></div>
+        <div id="bookchain"></div>
         <div className="set-div-to-full-screen">
           <div>
             {/* <img src={m} alt=""/> */}
@@ -42,22 +54,29 @@ class Home extends Component {
           <div className="clip-path-no-bottom background-choose">
             <div className="text-in-special">
               <div id="MetaMask_homepage_div">
-                <a className="links-homie" href="http://localhost:3000/metamask">
+                <a
+                  className="links-homie"
+                  href="http://localhost:3000/metamask"
+                >
                   <h1 className="fadeInLeft heading">
-                    How to use <br></br>MetaMask <i class="ri-check-double-line"></i>
+                    How to use <br></br>MetaMask{" "}
+                    <i class="ri-check-double-line"></i>
                   </h1>
                 </a>
                 <h4 className="heading">
-                  Our app works with the help of <br></br>Metamask Chrome extension
+                  Our app works with the help of <br></br>Metamask Chrome
+                  extension
                 </h4>
               </div>
             </div>
           </div>
         </div>
         <div className="set-div-to-full-screen">
-        <div>
+          <div>
             {/* <img src={m} alt=""/> */}
-            <h1 className="heading">Github<span>.</span>com </h1>
+            <h1 className="heading">
+              Github<span>.</span>com{" "}
+            </h1>
             <h2 className="heading">
               Visit the open source <br /> Repository<span>.</span>
             </h2>
@@ -67,12 +86,12 @@ class Home extends Component {
               <div>
                 <a className="links-homie" href="http://localhost:3000/search">
                   <h1 className="fadeInLeft heading">
-                    Spirit-ofJoy/<br />BookChain<i class="ri-bookmark-line"> </i>
+                    Spirit-ofJoy/
+                    <br />
+                    BookChain<i class="ri-bookmark-line"> </i>
                   </h1>
                 </a>
-                <h4 className="heading">
-                  Know our project better on Git
-                </h4>
+                <h4 className="heading">Know our project better on Git</h4>
               </div>
             </div>
           </div>

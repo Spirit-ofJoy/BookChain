@@ -21,6 +21,7 @@ import Background from "./background_star/background";
 import Blogs from "../components/blogs/Blog_List";
 import HomePage from "../components/home_page/Home";
 import Home from "./homie/home";
+import Loader from "./home_page/Loading"
 
 // import Dash from "../components/views/Dashboard/Dashboard"
 
