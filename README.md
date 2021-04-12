@@ -20,7 +20,7 @@ This is the repository for the project BookChain, a web application built for Ha
 
 <a href="https://hack36.com"> <img src="http://bit.ly/BuiltAtHack36" height=28px> </a>
 
-<p align="center"><img src="./docs/1.png"></p>
+<p align="center"><img src="./docs/2.png"></p>
 <p id="About"><h2><font>:beginner: About </font></h2></p>
 <br>
 <!-- Description -->
