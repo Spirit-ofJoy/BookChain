@@ -46,6 +46,7 @@ class B extends Component {
                         this.forceUpdate();
                         console.log(srch);
                         console.log(typeof srch);
+                        console.log(this.props.products)
                       }}
                     >
                       <div className="form-group mr-sm-2">

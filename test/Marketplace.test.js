@@ -4,7 +4,7 @@ require('chai')
   .use(require('chai-as-promised'))
   .should()
 
-contract('Marketplace', ([deployer, seller, buyer, writer]) => {
+contract('Marketplace', ([deployer, seller, buyer, writer, receiver]) => {
   let marketplace
 
   before(async () => {
@@ -17,6 +17,7 @@ contract('Marketplace', ([deployer, seller, buyer, writer]) => {
       assert.notEqual(address, 0x0)
       assert.notEqual(address, '')
       assert.notEqual(address, null)
+      assert.notEqual(address, undefined)
       assert.notEqual(address, undefined)
     })
 
@@ -136,6 +137,40 @@ contract('Marketplace', ([deployer, seller, buyer, writer]) => {
       assert.equal(post.heading, 'Topic', 'Heading is correct')
       assert.equal(post.content, 'This is my first post', 'content is correct')
       assert.equal(post.writer, writer, 'writer is correct')
+    })
+
+  })
+  describe('chats', async () => {
+    let result, chatCount
+
+    before(async () => {
+      result = await marketplace.createChat('Topi','This is my first pos', receiver, { from: writer })
+      chatCount = await marketplace.chatCount()
+    })
+
+    it('creates chats', async () => {
+      // SUCESS
+      assert.equal(chatCount, 1)
+      const event = result.logs[0].args
+      assert.equal(event.id.toNumber(), chatCount.toNumber(), 'id is correct')
+      assert.equal(event.heading, 'Topi', 'Heading is correct')
+      assert.equal(event.content, 'This is my first pos', 'content is correct')
+      assert.equal(event.receiver, receiver, 'receiver is correct')
+      assert.equal(event.writer, writer, 'writer is correct')
+      
+
+      // FAILURE: Post must have content
+      await marketplace.createChat('','', receiver,  { from: writer}).should.be.rejected;
+    })
+
+    it('lists chats', async () => {
+      const chat = await marketplace.chats(chatCount)
+      assert.equal(chat.id.toNumber(), chatCount.toNumber(), 'id is correct')
+      assert.equal(chat.heading, 'Topi', 'Heading is correct')
+      assert.equal(chat.content, 'This is my first pos', 'content is correct')
+      assert.equal(chat.receiver, receiver, 'receiver is correct')
+      assert.equal(chat.writer, writer, 'writer is correct')
+      
     })
 
   })

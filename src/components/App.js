@@ -13,12 +13,17 @@ import B from "./Z_Final/searchProducts_history";
 
 import C from "./Z_Final/ownedItems";
 import D from "./Z_Final/forSelling";
+import Loader from "./Loader"
 
 import Metamask from "../components/metamask/main_screen";
 
 import Background from "./background_star/background";
 
 import Blogs from "../components/blogs/Blog_List";
+import Sent from "../components/chats/sent";
+import Mychat from "../components/chats/mychats";
+import Filterchat from "../components/chats/filterchat";
+import Received from "../components/chats/received";
 import HomePage from "../components/home_page/Home";
 import Home from "./homie/home";
 
@@ -75,6 +80,17 @@ class App extends Component {
           posts: [...this.state.posts, post],
         });
       }
+
+      const chatCount = await marketplace.methods.chatCount().call();
+      this.setState({ chatCount });
+      // Load Chats
+      for (var k = chatCount; k >= 1; k--) {
+        const chat = await marketplace.methods.chats(k).call();
+        this.setState({
+          
+          chats: [...this.state.chats, chat],
+        });
+      }
       this.setState({ loading: false });
       // // Sort posts. Show highest tipped posts first
       // this.setState({
@@ -92,10 +108,13 @@ class App extends Component {
       productCount: 0,
       products: [],
       posts: [],
+      chats: [],
       postCount: 0,
+      chatCount: 0,
       loading: true,
     };
     this.createPost = this.createPost.bind(this);
+    this.createChat = this.createChat.bind(this);
     this.createProduct = this.createProduct.bind(this);
     this.purchaseProduct = this.purchaseProduct.bind(this);
   }
@@ -104,6 +123,16 @@ class App extends Component {
     this.setState({ loading: true });
     this.state.marketplace.methods
       .createPost(heading, content)
+      .send({ from: this.state.account })
+      .once("receipt", (receipt) => {
+        this.setState({ loading: false });
+      });
+  }
+
+  createChat(heading, content, receiver) {
+    this.setState({ loading: true });
+    this.state.marketplace.methods
+      .createChat(heading, content, receiver)
       .send({ from: this.state.account })
       .once("receipt", (receipt) => {
         this.setState({ loading: false });
@@ -211,6 +240,35 @@ class App extends Component {
                     
                   /> */}
                 </Route>
+                <Route path="/sent" exact>
+                <Loader time={0.4} />
+                  <Sent
+                    account={this.state.account}
+                    chats={this.state.chats}
+                    createChat={this.createChat}
+                  />
+                </Route>
+                <Route path="/received" exact>
+                <Loader time={0.4} />
+                  <Received
+                    account={this.state.account}
+                    chats={this.state.chats}
+                    createChat={this.createChat}
+                  />
+                </Route>
+                <Route path="/mychat" exact>
+                <Loader time={0.4} />
+                  <Mychat
+                    account={this.state.account}
+                    chats={this.state.chats}
+                    createChat={this.createChat}
+                  />
+                </Route>
+                <Filterchat
+                    account={this.state.account}
+                    chats={this.state.chats}
+                    createChat={this.createChat}
+                  />
               </Switch>
             </Route>
           </Switch>

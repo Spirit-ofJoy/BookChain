@@ -4,14 +4,25 @@ contract Marketplace {
     string public name;
     uint public productCount = 0;
     uint public postCount = 0;
+    uint public chatCount = 0;
     mapping(uint => Product) public products;
     mapping(uint => Post) public posts;
+    mapping(uint => Chat) public chats;
 
     struct Post {
         uint id;
         string heading;
         string content;   
         address payable writer;
+    }
+
+    struct Chat{
+        uint id;
+        string heading;
+        string content;
+        address receiver;
+        address payable writer;
+        
     }
 
     struct Product {
@@ -30,6 +41,15 @@ contract Marketplace {
         string heading,
         string content,
         address payable writer
+    );
+
+    event ChatCreated(
+        uint id,
+        string heading,
+        string content,
+        address receiver,
+        address payable writer
+        
     );
 
 
@@ -71,6 +91,21 @@ contract Marketplace {
         posts[postCount] = Post(postCount, _heading, _content, msg.sender);
         // Trigger event
         emit PostCreated(postCount, _heading, _content, msg.sender);
+    }
+
+    function createChat(string memory _heading, string memory _content, address _receiver) public {
+        // Require valid content
+        
+        // require(bytes(_heading).length > 0);
+        require(bytes(_content).length > 0);
+        // require(bytes(_receiver).length > 0);
+        
+        // Increment the chat count
+        chatCount ++;
+        // Create the chat
+        chats[chatCount] = Chat(chatCount, _heading, _content, _receiver, msg.sender);
+        // Trigger event
+        emit ChatCreated(chatCount, _heading, _content, _receiver, msg.sender);
     }
 
 

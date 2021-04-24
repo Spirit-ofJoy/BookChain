@@ -1,10 +1,13 @@
-import React, { Component } from "react";
+import React, { Component} from "react";
 import { Navbar, Nav, NavLink } from "react-bootstrap";
+import { NavDropdown} from "react-bootstrap";
 import im1 from "../images/favicon.png";
 import "./navbar.css";
 
 class Navigbar extends Component {
+  // 
   render() {
+    // const [show4, setShow4] = useState(false);
     return (
       <>
         <Navbar
@@ -21,34 +24,49 @@ class Navigbar extends Component {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
-              <NavLink eventKey="blogs" hresname="nav-items" href="/productAdd">
+              <Nav.Link eventKey="blogs" hresname="nav-items" href="/productAdd">
                 Add Books
-              </NavLink>
+              </Nav.Link>
 
-              <NavLink
+              <Nav.Link
                 eventKey="blogs"
                 hresname="nav-items"
                 href="/ItemsOnSale"
               >
                 Items on Sale
-              </NavLink>
+              </Nav.Link>
 
-              <NavLink eventKey="blogs" hresname="nav-items" href="/ItemsOwned">
+              <Nav.Link eventKey="blogs" hresname="nav-items" href="/ItemsOwned">
                 My Items
-              </NavLink>
+              </Nav.Link>
 
-              <NavLink eventKey="blogs" hresname="nav-items" href="/search">
+              <Nav.Link eventKey="blogs" hresname="nav-items" href="/search">
                 Search Books
-              </NavLink>
+              </Nav.Link>
 
-              <NavLink
+              <Nav.Link
                 className="itemfont"
                 eventKey="blogs"
                 href="/network"
                 className="nav-items"
               >
                 Discussion
-              </NavLink>
+              </Nav.Link>
+
+              <NavDropdown
+              title="Chats"
+              id="basic-nav-dropdown"
+              // onMouseEnter={() => setShow4(true)}
+              // onMouseLeave={() => setShow4(false)}
+              // onTouchEnd={() => setShow4(!show4)}
+              // show={show4}
+            >
+              <NavDropdown.Item href="/sent">Sent</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="/received">Received</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="/mychat">Search</NavDropdown.Item>
+            </NavDropdown>
             </Nav>
             <ul className="navbar-nav px-3">
               <li className="nav-item text-nowrap d-none d-sm-none d-sm-block">

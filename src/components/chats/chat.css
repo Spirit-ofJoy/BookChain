@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+:root {
+  --blog-heading-div-color: rgb(13, 19, 44);
+  --blog-border-thickness-in-px: 1px;
+  --blog-heading-height: 5.2rem;
+  --icon-movement-in-animation: 10px;
+}
+
+.the-blog-containing-div {
+    /* width: 75%; */
+  border: 1px solid rgba(0, 0, 0, 0.383);
+  position: relative;
+  /*border-radius: 30px 30px 10px 10px;*/
+}
+
+.blog-heading-div {
+  padding: 20px 30px;
+  background-color: var(--blog-heading-div-color);
+  /*border-radius: 30px 30px 0px 0px;*/
+  position: absolute;
+  top: calc(-1 * var(--blog-border-thickness-in-px));
+  left: calc(-1 * var(--blog-border-thickness-in-px));
+  height: var(--blog-heading-height);
+  width: calc(100% + 2 * var(--blog-border-thickness-in-px));
+}
+
+h1.blog-heading {
+  font-size: 1.7rem;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0.2rem;
+  color: white;
+  font-weight: bold;
+}
+
+.blog-heading > i {
+  animation: the-icon-animation-blog 5s cubic-bezier(0.47, 1.11, 0.22, 1)
+    infinite;
+  vertical-align: middle;
+  font-size: 2.4rem;
+}
+
+/*--------------------------------
+Blog Post Heading Icon Animation key frames
+--------------------------------*/
+
+@keyframes the-icon-animation-blog {
+  0% {
+    padding-left: var(--icon-movement-in-animation);
+  }
+
+  10% {
+    padding-left: 0px;
+  }
+
+  90% {
+    padding-left: 0px;
+  }
+
+  100% {
+    padding-left: var(--icon-movement-in-animation);
+  }
+}
+
+.blog-heading > .blog-heading-added {
+  color: rgb(0, 255, 0);
+}
+
+.blog-heading > .blog-heading-notice {
+  color: rgb(0, 217, 255);
+}
+
+.blog-heading > .blog-heading-request {
+  color: rgb(251, 255, 0);
+}
+
+.blog-heading > .blog-heading-else {
+  color: rgb(255, 0, 0);
+}
+
+.blog-content-div {
+  margin-top: var(--blog-heading-height);
+}
+
+.blog-padding-content {
+  font-family: "Lato", sans-serif;
+  color: rgb(210, 255, 255);
+  font-size: 1.5rem;
+  letter-spacing: 0.075rem;
+  padding: 20px;
+  margin: 0;
+}
+
+.blog-blogger-name {
+  color: aliceblue;
+  font-weight: bolder;
+  font-style: italic;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: medium;
+}
+
+.blog-blogger-name > a,
+.blog-blogger-name > a:focus,
+.blog-blogger-name > a:hover {
+  text-decoration: none;
+  outline:none;
+}
+
