@@ -6,7 +6,7 @@ import "./App.css";
 import Marketplace from "../abis/Marketplace.json";
 import Navbar from "./Navbar";
 import Network from "./Network";
-import Loader from '../components/Loader';
+// import Loader from '../components/Loader';
 // import Main from './Main'
 // import Dashboard from './Dashboard'
 import A from "./Z_Final/addShowProduct";

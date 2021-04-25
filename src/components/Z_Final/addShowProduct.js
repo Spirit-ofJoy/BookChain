@@ -69,7 +69,7 @@ class A extends Component {
                             this.productAuthor = input;
                           }}
                           className="form-control"
-                          placeholder="Product Author"
+                          placeholder="Product Type"
                           required
                         />
                       </div>
@@ -109,7 +109,7 @@ class A extends Component {
                           <th scope="col">#</th>
                           <th scope="col">Name</th>
                           <th scope="col">Info</th>
-                          <th scope="col">Author</th>
+                          <th scope="col">Type</th>
                           <th scope="col">Price</th>
                           <th scope="col">Owner</th>
                           <th scope="col">Status</th>

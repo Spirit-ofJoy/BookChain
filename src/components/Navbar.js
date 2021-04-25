@@ -25,7 +25,7 @@ class Navigbar extends Component {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
               <Nav.Link eventKey="blogs" hresname="nav-items" href="/productAdd">
-                Add Books
+                Add Items
               </Nav.Link>
 
               <Nav.Link
@@ -41,7 +41,7 @@ class Navigbar extends Component {
               </Nav.Link>
 
               <Nav.Link eventKey="blogs" hresname="nav-items" href="/search">
-                Search Books
+                Search Items
               </Nav.Link>
 
               <Nav.Link

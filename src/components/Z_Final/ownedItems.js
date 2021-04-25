@@ -26,14 +26,14 @@ class C extends Component {
                     className="text-center"
                     style={{ maxWidth: "80%" }}
                   >
-                    <h2>Items Own</h2>
+                    <h2>Already Bought Items</h2>
                     <table className="table">
                       <thead>
                         <tr>
                           <th scope="col">#</th>
                           <th scope="col">Name</th>
                           <th scope="col">Info</th>
-                          <th scope="col">Author</th>
+                          <th scope="col">Type</th>
                           <th scope="col">Price</th>
                           <th scope="col">Owner</th>
                           <th scope="col"></th>
@@ -103,7 +103,7 @@ class C extends Component {
                           <th scope="col">#</th>
                           <th scope="col">Name</th>
                           <th scope="col">Info</th>
-                          <th scope="col">Author</th>
+                          <th scope="col">Type</th>
                           <th scope="col">Price</th>
                           <th scope="col">Owner</th>
                           <th scope="col"></th>

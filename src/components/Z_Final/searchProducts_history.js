@@ -78,7 +78,7 @@ class B extends Component {
                           <th scope="col">#</th>
                           <th scope="col">Name</th>
                           <th scope="col">Info</th>
-                          <th scope="col">Author</th>
+                          <th scope="col">Type</th>
                           <th scope="col">Price</th>
                           <th scope="col">Owner</th>
                           <th scope="col">Status</th>
@@ -172,7 +172,7 @@ class B extends Component {
                           <th scope="col">#</th>
                           <th scope="col">Name</th>
                           <th scope="col">Info</th>
-                          <th scope="col">Author</th>
+                          <th scope="col">Type</th>
                           <th scope="col">Price</th>
                           <th scope="col">Owner</th>
                           <th scope="col">Status</th>
