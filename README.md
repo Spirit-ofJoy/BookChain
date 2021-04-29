@@ -83,7 +83,7 @@ If you want to test the code, you can do it by following these few steps
 
 <p id="Developers"><h2><font> :pencil: Contributors </font></h2></p>
 <UL>
-    <li><a href = "https://https://github.com/me-abhinav-1001"> Abhinav Anand </a> 
+    <li><a href = "https://github.com/me-abhinav-1001"> Abhinav Anand </a> 
     <li><a href = "https://github.com/Spirit-ofJoy"> Yashendu Paresh Pandey </a>
     <li><a href = "https://github.com/ayayushsharma"> Ayush Sharma</a>
     <li><a href = "https://github.com/Ark2307"> Aryan Khandelwal</a>
